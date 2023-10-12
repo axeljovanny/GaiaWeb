@@ -1,0 +1,50 @@
+
+.logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.svgAbout {
+  transform: scale(1);
+}
+
+@media only screen and (min-width: 480px) {
+  .svgAbout {
+    transform: scale(1.5);
+  }
+
+  .logoFooter {
+    transform: scale(0.9);
+  }
+}
+
+
+@keyframes headertransition {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.1) translateY(5%);
+  }
+  75% {
+    transform: scale(1.2) translateY(-5%);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .svgAbout {
+    transform: scale(1);
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  
+}

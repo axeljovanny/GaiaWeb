@@ -1,0 +1,63 @@
+/* CIRCULOS */
+
+.circulo1 {
+  width: 20px;
+  height: 20px;
+  left: calc(24% + 0.02vw);
+  display: flex;
+  position: absolute;
+}
+
+.circulo2 {
+  width: 20px;
+  min-height: 20px;
+  left: 49%;
+  display: flex;
+  position: absolute;
+}
+
+.circulo3 {
+  width: 20px;
+  min-height: 20px;
+  left: calc(74% + 0.02vw);
+  display: flex;
+  position: absolute;
+}
+
+.flechaHome {
+  width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  transform: rotate(90deg);
+}
+
+.flecha {
+  width: 20px;
+  min-height: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container-prueba {
+  z-index: 10;
+  transform: translate(80px, 200px) scale(1.6);
+}
+
+.imgGallery {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+/*   left: 130px;
+  top:80px; */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+

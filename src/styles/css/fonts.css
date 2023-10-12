@@ -1,0 +1,147 @@
+/* LATO */
+@font-face {
+  font-family: "LatoBlack";
+  src: local("Black"), url(../fonts/Lato/Black.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoBlackI";
+  src: local("BlackI"), url(../fonts/Lato/BlackI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoBold";
+  src: local("Bold"), url(../fonts/Lato/Bold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoBoldI";
+  src: local("BoldI"), url(../fonts/Lato/BoldI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: local("Regular"), url(../fonts/Lato/Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoRegularI";
+  src: local("RegularI"), url(../fonts/Lato/RegularI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoLight";
+  src: local("Light"), url(../fonts/Lato/Light.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoLightI";
+  src: local("LightI"), url(../fonts/Lato/LightI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoThin";
+  src: local("Thin"), url(../fonts/Lato/Thin.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "LatoThinI";
+  src: local("ThinI"), url(../fonts/Lato/ThinI.ttf) format("truetype");
+  font-display: swap;
+}
+
+/* Raleway */
+@font-face {
+  font-family: "RaleBlack";
+  src: local("Black"), url(../fonts/Raleway/Black.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleBlackI";
+  src: local("BlackI"), url(../fonts/Raleway/BlackI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleExtraBold";
+  src: local("ExtraBold"),
+    url(../fonts/Raleway/ExtraBold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleExtraBoldI";
+  src: local("ExtraBoldI"),
+    url(../fonts/Raleway/ExtraBoldI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleBold";
+  src: local("Bold"), url(../fonts/Raleway/Bold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleBoldI";
+  src: local("BoldI"), url(../fonts/Raleway/BoldI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleMedium";
+  src: local("Medium"), url(../fonts/Raleway/Medium.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleMediumI";
+  src: local("MediumI"), url(../fonts/Raleway/MediumI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleRegular";
+  src: local("Regular"), url(../fonts/Raleway/Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleRegularI";
+  src: local("RegularI"), url(../fonts/Raleway/RegularI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleLight";
+  src: local("Light"), url(../fonts/Raleway/Light.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleLightI";
+  src: local("LightI"), url(../fonts/Raleway/LightI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleExtraLight";
+  src: local("ExtraLight"),
+    url(../fonts/Raleway/ExtraLight.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleExtraLightI";
+  src: local("ExtraLightI"),
+    url(../fonts/Raleway/ExtraLightI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleSemi";
+  src: local("Semi"), url(../fonts/Raleway/Semi.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleSemiI";
+  src: local("SemiI"), url(../fonts/Raleway/SemiI.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleThin";
+  src: local("Thin"), url(../fonts/Raleway/Thin.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RaleThinI";
+  src: local("ThinI"), url(../fonts/Raleway/ThinI.ttf) format("truetype");
+  font-display: swap;
+}
