@@ -3,10 +3,12 @@ import '../styles/css/fonts.css'
 
 export const colors = {
     green: "#828C7A",
+    darkGreen:"#4b5246", 
     accentBlue: "#6D9886",
     black: "#2C2C2C",
     softBlack: "#707070",
     softWhite: "#F4F2EF",
+    softYellow: "#f5e5ce",
     white: "#FBFBFB",
     red: "#FF0000",
     yell: "#FFFF00",

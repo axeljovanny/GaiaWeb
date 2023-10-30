@@ -184,11 +184,8 @@ export const Overlay = styled(motion.div)`
   z-index: 12;
   background: ${colors.none};
 
-
-
-  ${above.large` {
+  ${above.large`
     display: none;
-    }
   `}
 `;
 

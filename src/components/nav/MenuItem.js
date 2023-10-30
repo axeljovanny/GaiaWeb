@@ -78,7 +78,7 @@ export const MenuItem = ({ toggle }) => {
                     </Link>
                 </Item>
                 <Item>
-                    <Link to="/">
+                    <Link to="/about">
                         ABOUT
                     </Link>
                 </Item>

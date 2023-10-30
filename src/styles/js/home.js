@@ -8,18 +8,44 @@ import { motion } from "framer-motion"
 /// HERO SECTION 
 
 export const StyledHome = styled.div`
+  width: 100vw;
+  height: 95vh;
   display: grid; 
-  grid-template-columns: repeat(3); 
-  grid-template-rows: repeat(3); 
+  grid-template-columns: 20% 60% 20%; 
+  grid-template-rows: 20% 60% 20%; 
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 100vw;
-  height: 100vh;
   padding-top: 0%;
   background: ${colors.none};
   overflow-x: hidden;
   ${above.large`  
-  grid-template-rows: repeat(2); 
+  grid-template-rows: 60% 40%; 
+  `}
+`
+
+export const StyledBannerHome = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 5vh;
+  background: ${colors.green};
+  text-align: center;
+
+  p{
+    width: 90%;
+    font-family: ${font.Lregular};
+    font-size: ${size.Mtext};
+    color: ${colors.softYellow};
+  }
+
+  ${above.large` 
+  height: 5vh;
+  p{
+    font-family: ${font.Lregular};
+    font-size: ${size.Wtext};
+    color: ${colors.softYellow};
+  }
   `}
 `
 
@@ -49,13 +75,10 @@ export const CircleNature = styled.div`
   grid-area: 1 / 1 / 2 / 2; 
   `}
 `
-export const LogoPrincipal = styled.div`
+export const LogoPrincipal = styled(motion.div)`
   grid-area: 2 / 1 / 3 / 4;
-  width: 100vw;
-  height: 20vh;
   background: ${colors.none};
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   svg{
@@ -67,10 +90,9 @@ export const LogoPrincipal = styled.div`
   }
   `}
   ${above.large`
-  width: 60vw;
-  height: 60vh;
   grid-area: 1 / 2 / 2 / 3;
-  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 3em;
 
   svg{
     width: 60%;
@@ -125,26 +147,22 @@ export const Social = styled(motion.div)`
 
   ${above.large`
   grid-area: 2 / 1 / 3 / 2; 
-  width: 19vw;
-  height: 40vh;
   background: ${colors.none};
-
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
+  gap: 0.3em;
+  margin: 0 0 10% 15%
+  `}
+  ${above.xlarge`
   gap: 0.5em;
-  a{padding-left: 15%;}
-  
   `}
 `
 
 export const PhoneLogo = styled(motion.div)`
   grid-area: 3 / 2 / 4 / 3;
-  width: calc(100vw / 3);
-  height: 40vh;
   background: ${colors.none};
-
   display: flex;
   justify-content: center ;
   align-items: flex-end;
@@ -158,23 +176,18 @@ export const PhoneLogo = styled(motion.div)`
   a p{display: none;}
 
   ${above.large`
-  width: 60vw;
-  height: 40vh;
   grid-area: 2 / 2 / 3 / 3; 
-
   a p{
     display:flex;
     margin-bottom: 5vh;
     font-family: ${font.Lregular};
     font-size: ${size.Xtext};
-    color: ${colors.white};
+    color: ${colors.softWhite};
   }
   `}
 `
 export const Scroll = styled.div`
   grid-area: 3 / 1 / 4 / 2;
-  width: calc(100vw / 3);
-  height: 40vh;
   background: ${colors.none};
   display: flex;
   justify-content: center;
@@ -182,8 +195,7 @@ export const Scroll = styled.div`
 
   ${above.large`
   align-items: flex-end;
-  width: 20vw;
-  height: 40vh;
+  padding-bottom: 2em;
   grid-area: 2 / 3 / 3 / 4; 
   `}
 `
@@ -312,12 +324,12 @@ export const TextWedo = styled.div`
     font-family: ${font.Rthin};
     font-size: 20px;
   }
-  h3{
+  p{
     text-align:justify;
     padding-top: 10px;
     line-height: 150%; 
     font-family: ${font.Llight};
-    font-size: 14px;
+    font-size: 1px;
     
 
   }
@@ -352,7 +364,7 @@ export const TextWedo = styled.div`
     font-family: ${font.Rthin};
     font-size: 30px;
   }
-  h3{
+  p{
     text-align:justify;
     line-height: 160%; 
     font-family: ${font.Llight};
@@ -378,7 +390,7 @@ export const TextWedo = styled.div`
     font-family: ${font.Rthin};
     font-size: 30px;
   }
-  h3{
+  p{
     text-align:justify;
     line-height: 160%; 
     font-family: ${font.Llight};
@@ -400,7 +412,7 @@ export const TextWedo = styled.div`
     font-family: ${font.Rregular};
     font-size: 26px;
   }
-  h3{
+  p{
     text-align:justify;
     line-height: 160%;
     font-family: ${font.Llight};
@@ -669,7 +681,7 @@ export const TextSkin = styled.div`
   
   color: ${colors.black};
 
-  h3{
+  p{
     text-align:justify;
     padding-top: 4%; 
     line-height: 150%; 
@@ -696,7 +708,7 @@ export const TextSkin = styled.div`
     font-size: 22px;
     padding: 2em 0 0;
   }
-  h3{
+  p{
     text-align:justify;
     font-family: ${font.Llight};
     font-size: 22px;
@@ -713,7 +725,7 @@ export const TextSkin = styled.div`
     font-size: 16px;
 
   }
-  h3{
+  p{
     text-align:justify;
     line-height: 160%; 
     font-family: ${font.Llight};
@@ -731,7 +743,7 @@ export const TextSkin = styled.div`
     font-size: 20px;
     justify-content: flex-center ;
   }
-  h3{
+  p{
     text-align:justify;
     line-height: 160%;
     font-family: ${font.Llight};

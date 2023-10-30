@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage, StaticImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
@@ -13,12 +13,22 @@ import { AdvImage, Gift, StyledHair, StyledSkin } from "../styles/js/home";
 import '../styles/css/home.css'
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
+import { SEO } from "../components/seo";
 
 export const query = graphql`
-  query {
+  query ($language: String!) {
     site {
       siteMetadata {
         siteUrl
+      }
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }
@@ -26,7 +36,7 @@ export const query = graphql`
 
 
 const IndexPage = ({ data }) => {
-  const canonicalUrl = "https://gaiaevolutionspaandsalon.com";
+  const canonicalUrl = "https://luckyducky.studio";
   const { siteUrl } = data.site.siteMetadata;
 
   const [isOpen, setIsOpen] = useState(false);
@@ -45,55 +55,60 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
-      <Layout><Hero />
-      <Wedo />
-      <StyledSkin>
-        <Skincare />
-      </StyledSkin>
-      <StyledHair>
-        <Haircare />
-      </StyledHair>
-      <StyledSkin>
-        <Bodycare />
-      </StyledSkin>
-      <Products />
-      <Maps />
-      <Gift 
-      initial={false}
-      animate={isOpen ? "open" : "closed"} >
-        <AdvImage
-        href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank"
-        onHoverStart={() => setIsOpen(!isOpen)}
-        onHoverEnd={() => setIsOpen(!isOpen)}
-        variants={itemVariants}>
-          <StaticImage 
-          src="../images/Home/PNG/Tarjeta.png" 
-          alt="GiftMovil" 
-          placeholder="blurred"
-          breakpoints={[750, 1080, 1366, 1920]}
-          
-          layout="constrained"
-          className="gift"
-          />
-        </AdvImage>
-        <AdvImage movil
-        href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank">
-          <StaticImage 
-          src="../images/Home/PNG/TarjetaRecortada.png" 
-          alt="GiftMovil" 
-          placeholder="blurred" 
-          layout="constrained"
-          breakpoints={[750, 1080, 1366, 1920]}
-          className="gift"
-          />
-        </AdvImage>
-      </Gift>
-       <Navbar siteTitle="index" />
-      <Footer></Footer>
+      <Layout>
+        <Hero />
+        <Wedo />
+        <StyledSkin>
+          <Skincare />
+        </StyledSkin>
+        <StyledHair>
+          <Haircare />
+        </StyledHair>
+        <StyledSkin>
+          <Bodycare />
+        </StyledSkin>
+        <Products />
+        <Maps />
+        
+        
+        <Footer></Footer> 
+        <Navbar siteTitle="index" />
+        <Gift
+          initial={false}
+          animate={isOpen ? "open" : "closed"} >
+          <AdvImage
+            href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank"
+            onHoverStart={() => setIsOpen(!isOpen)}
+            onHoverEnd={() => setIsOpen(!isOpen)}
+            variants={itemVariants}>
+            <StaticImage
+              src="../images/Home/PNG/Tarjeta.png"
+              alt="GiftMovil"
+              placeholder="blurred"
+              breakpoints={[750, 1080, 1366, 1920]}
+
+              layout="constrained"
+              className="gift"
+            />
+          </AdvImage>
+          <AdvImage movil
+            href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank">
+            <StaticImage
+              src="../images/Home/PNG/TarjetaRecortada.png"
+              alt="GiftMovil"
+              placeholder="blurred"
+              layout="constrained"
+              breakpoints={[750, 1080, 1366, 1920]}
+              className="gift"
+            />
+          </AdvImage>
+        </Gift>
       </Layout>
-      
+
     </>
   )
 };
 
 export default IndexPage
+
+export const Head = () => <SEO/> 

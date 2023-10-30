@@ -13,7 +13,7 @@
 .scroll-movil {
   display:block;
   width: auto;
-  height: 40%;
+  height: 80%;
   transform: translateX(-100%);
 }
 
@@ -21,7 +21,8 @@
   display: none;
 }
 .CTVTS {
-  width: 100%;
+  width: 80%;
+    transform: translate(-10%, -20%);
 }
 
 .logo-footer {
@@ -93,10 +94,10 @@
 .HomeWD1 {
   display: none;
 }
-.HomeWDMovil img{
-  height: 100% ;
-  width: auto;
-
+.HomeWDMovil{
+    display: flex;
+    right: 0;
+    width: 100px ;
 }
 .gift{
   height: 100% ;
@@ -224,11 +225,7 @@
     background: none;
     top: 8%;
   }
-  .HomeWDMovil img{
-    width: auto;
-    height: 100%;
-  
-  }
+ 
 }
 
 @media only screen and (min-width: 1140px) {
@@ -286,17 +283,17 @@
 
   .HomeWD1 {
     display: flex;
-    position: absolute;
-    transform: translate(-90%, 40%);
+    left: -100%;
+    top: 0%;
+    width: 300px ;
   }
   .HomeWDMovil {
     display: none;
   }
   .HomeWD2 {
     display: flex;
-    position: absolute;
-    transform: translate(50%, 0%) scale(1.3);
-  }
+    left: 45%;
+    width: 400px ;}
 
   .SkinSvg {
     position: absolute;
@@ -342,12 +339,7 @@
 }
 
 @media only screen and (min-width: 1370px) {
-  .HomeWD1 {
-    transform: translate(-90%, 40%)  scale(0.8);
-  }
-  .HomeWD2 {
-    transform: translate(80%, 0%) scale(1);
-  }
+  
 
   .Skin {
     position: absolute;
@@ -388,8 +380,8 @@
     width: 60%;
   }
   .CTVTS {
-    width: 70%;
-    transform: translate(-10%, 50%);
+    width: 60%;
+    transform: translate(50%, 100%);
   }
   .logo-footer {
     display: flex;

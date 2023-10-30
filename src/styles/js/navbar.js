@@ -40,7 +40,7 @@ display: flex;
   z-index: 11;
   top: 0;
   width: 100vw;
-  height: 20vh;
+  height: 13vh;
   backdrop-filter: blur(10px);
   mask: linear-gradient(to top, transparent, black 60%);
   `}
@@ -145,21 +145,18 @@ export const LineHome = styled.span`
     }
 `;
 
-export const Overlay = styled.div`
+export const Overlay = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  height: ${props => (props.open ? "100vh" : 0)};
+  height: 10%;
   width: 100vw;
-  background: ${colors.black};
-  transition: height 0.3s ease-in-out;
   position: fixed;
-  z-index: 5;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  z-index: 12;
+  background: ${colors.none};
 
-  ${above.large` {
-    display: none;
-    }
+  ${above.large`
+    display:none;
   `}
 `;
 

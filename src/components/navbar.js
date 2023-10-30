@@ -4,11 +4,8 @@ import { useCycle } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image";
 
 // Estilos
-import { StyledLogoContainer, StyledItems, StyledNavbar, ItemNav, LineHome, Mask } from "../styles/js/navbar"
-import { Overlay } from "../styles/js/servnav"
-// SVG
-import Loadable from "@loadable/component"
-const Logow = Loadable(() => import("../assets/logo.svg"))
+import { StyledLogoContainer, StyledItems, StyledNavbar, ItemNav, LineHome, Mask, Overlay} from "../styles/js/navbar"
+
 //Constantes
 import { colors } from "../utils/const"
 
@@ -18,6 +15,7 @@ import { Navigation } from "./nav/Navigation";
 import "./nav/styles.css";
 import { AvedaA, AvedaCompleto } from "../images/icons";
 import '../styles/css/home.css'
+import { Logo } from "../assets/Home";
 
 
 
@@ -112,7 +110,7 @@ const Navbar = ({ siteTitle }) => {
 
                     <StyledLogoContainer>
                         <Link to="/">
-                            <Logow className="logo" />
+                            <Logo className="logo" fill={colors.darkGreen} />
                         </Link>
                     </StyledLogoContainer>
 
@@ -125,7 +123,7 @@ const Navbar = ({ siteTitle }) => {
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link to="/"> ABOUT US </Link>
+                            <Link to="/about"> ABOUT US </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, fill: colors.accentBlue }}
