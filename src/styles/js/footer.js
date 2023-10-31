@@ -9,7 +9,7 @@ export const StyledFooter = styled.div`
   justify-content: center;
   width: 100%;
   height: 60vh;
-  background: ${colors.green};
+  background: ${colors.darkGreen};
 
   ${above.medium`
 
@@ -18,51 +18,52 @@ export const StyledFooter = styled.div`
   `}
   ${above.large`
 
-  height: 70vh;
+  height: 40vh;
 
   `}
   ${above.xlarge`
 
-  height: 50vh;
+  height: 40vh;
 
   `}
 `
 
 export const StyledContainer = styled.div`
   display:flex;  
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  
+  flex-flow: row wrap;
   background: ${colors.none};
-
   width: 90%;
-  height: 90%;
   ${above.medium`
   
   `}
   ${above.large`
-  justify-content: space-between;
-  flex-flow: row wrap;
+  display:grid;  
+  width: 80%;
   height: 80%;
-
+  grid-template-columns:40% 15% 15% 30%;
+  grid-template-rows: 35% 55% 10%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
 `}
+  ${above.xlarge`
+  width: 70%;
 
+`} 
 `
 export const Datos = styled.div`
   display:flex;  
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: column nowrap;
-  
   background: ${colors.none};
-
-  width: 80%;
-  height: 45%;
+  width: 100%;
+  margin: 3% 0;
 
   p, a{
-    margin: 2%;
+    margin: 1% 0;
     font-family: ${font.Lmedium};
     font-size: ${size.Mtext};
     color:${colors.softWhite};
@@ -80,15 +81,18 @@ export const Datos = styled.div`
   }
   `}
   ${above.large`
-  padding-left: 5%;
-  width: 45%;
-  height: 40%;
-  align-items: flex-start;
+  grid-area:  2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height:100%;
 
   p, a{
-    margin: 1% 0%;
+    margin: 0.4% 0%;
     font-family: ${font.Lregular};
-    font-size: ${size.Xtext};
+    font-size: ${size.Wtext};
     color:${colors.softWhite};
 
   }
@@ -97,20 +101,16 @@ export const Datos = styled.div`
 
 `
 export const RS = styled.div`
-  display:none;
-  ${above.medium`
+display:flex;  
+${above.medium`
   
   `}
   ${above.large`
-  display:flex;  
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
   
   background: ${colors.none};
-  width: 50%;
-  height: 40%;
-
 `}
 
 ${above.xlarge`
@@ -120,27 +120,37 @@ align-items: center;
 flex-flow: column nowrap;
 
 background: ${colors.none};
-width: 20%;
-height: 40%;
-
 `}
 
 `
 export const Credits = styled.div`
+  margin: 10% 0 0 0;
+  grid-area: 3 / 1 / 4 / 5;
   display:flex;  
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
-  
   background: ${colors.none};
-
   width: 100%;
-  height: 10%;
   ${above.medium`
   `}
   ${above.large`
+  margin: 0;
+
+`}
+
+`
+export const Logo = styled.div`
+  background: ${colors.none};
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  ${above.medium`
+  `}
+  ${above.large`
+  grid-area:  1 / 1 / 2 / 2;
   width: 100%;
-  height: 20%;
+  height: 100%
 
 `}
 
@@ -217,7 +227,6 @@ export const CreditsNote = styled.div`
   ${above.xlarge`
   width: 90%;
   p{
-    padding-top: 12vh;
     font-size: ${size.Wmini};
     color: ${colors.white};
   }
@@ -229,10 +238,12 @@ export const CreditsNote = styled.div`
     `
 
 export const FooterIcons = styled.div`
-    display: none;
+display:flex;
+padding-top: 30%;
+gap: 1vw;
+
     
     ${above.large`
-    display:flex;
     padding-top: 0vh;
     width: 80%;
     flex-direction: row;
@@ -241,7 +252,98 @@ export const FooterIcons = styled.div`
     gap: 1vw;
     svg{
         width: 100%;
-        
     }
   `}
+`
+
+export const CompanyTittle = styled.div`
+    width:50%;
+
+    
+    ${above.large`
+    grid-area: 1 / 2/ 2 / 3;
+    background: ${colors.none};
+  `}
+`
+
+export const ServicesTittle = styled.div`    
+    width:50%;
+
+    ${above.large`
+    grid-area: 1 / 3/ 2 / 4;
+    background: ${colors.none};
+  `}
+`
+export const SocialTittle = styled.div`
+    display:none;
+    justify-content: center;
+    align-items: flex-end; 
+    
+    ${above.large`
+    display:flex;
+    grid-area: 1 / 4/ 2 / 5;
+    background: ${colors.none};
+  `}
+`
+export const Tittle = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    height:100%;
+
+    H3{
+      font-family: ${font.Llight};
+      font-size: ${size.Xmini};
+      color: ${colors.white};
+}
+`
+
+export const CompanyLiks = styled.div` 
+width:50%;
+
+    
+    ${above.large`
+    grid-area: 2 / 2/ 3 / 3;
+    background: ${colors.none};
+    height:100%;
+
+  `}
+`
+
+export const ServiceLiks = styled.div`
+width:50%;
+
+    
+    ${above.large`
+    grid-area: 2 / 3/ 3 / 4;
+    background: ${colors.none};
+      height:100%;
+
+    
+  `}
+`
+export const SocialLiks = styled.div`
+    
+    ${above.large`
+    grid-area: 2 / 4/ 3 / 5;
+    background: ${colors.none};
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+
+    
+  `}
+`
+export const Liks = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
+  a{
+    font-family: ${font.Llight};
+    font-size: ${size.Wtext};
+    color: ${colors.white};
+  }
 `

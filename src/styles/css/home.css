@@ -26,8 +26,7 @@
 }
 
 .logo-footer {
-  display: flex;
-  width: 80%;
+  width: 90%;
 }
 .logo-movil {
   display: flex;
@@ -205,11 +204,7 @@
   width: 83vw;
   }
 
-  .logo-footer {
-    display: flex;
-    width: 60%;
-    transform: translate(0%, 0%);
-  }
+  
   .container {
     width: 50%;
     right: 0%;
@@ -229,6 +224,9 @@
 }
 
 @media only screen and (min-width: 1140px) {
+  .logo-footer {
+    width: 70%;
+  }
   .logo-web {
     display: flex;
     width: 100%;
@@ -247,11 +245,7 @@
   .logo-movil {
     display: none;
   }
-  .logo-footer {
-    display: flex;
-    width: 50%;
-    transform: scale(0.8);
-  }
+  
   .phone {
     display: none;
   }
@@ -383,9 +377,5 @@
     width: 60%;
     transform: translate(50%, 100%);
   }
-  .logo-footer {
-    display: flex;
-    width: 35%;
-    transform: scale(0.8) translate(0, -35%);
-  }
+  
 }
