@@ -8,7 +8,7 @@ import "../styles/css/home.css"
 
 export function IFondoHeader() {
     return <StaticImage
-        src="../images/BackGrounds/Home.jpg"
+        src="../images/Backgrounds/Home.jpg"
         alt="Fondo de header, imagen de una planta"
         layout="fullWidth"
         loading="eager"
