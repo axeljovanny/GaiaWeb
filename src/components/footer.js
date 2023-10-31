@@ -39,7 +39,7 @@ const Footer = ({ children }) => (
                         <Link to="/about"> <a>About</a> </Link>
                         <a href="mailto:gaiaevolution@icloud.com">Contact Us</a>
                         <Link to="/policies"> <a>Policies</a> </Link>
-                        <Link to="/"> <a>Sitemap</a> </Link>
+                        <a href="https://gaiaevolutionspaandsalon.com/sitemap/sitemap-index.xml">Sitemap</a>
                     </Liks>
                 </CompanyLiks>
                 <ServiceLiks>
