@@ -1,6 +1,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const siteUrl = process.env.URL || `https://gaiaevolutionspaandsalon.com/`
+
+
 module.exports = {
   siteMetadata: {
     title: `Gaia Evolution Spa & Salon | Natural Beauty and Wellness in Illinois`,
@@ -8,7 +11,7 @@ module.exports = {
     siteUrl: `https://gaiaevolutionspaandsalon.com/`,
     author: `@ldstudio`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
     {
       resolve: 'gatsby-source-filesystem',
       options: {
