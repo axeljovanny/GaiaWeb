@@ -1,8 +1,6 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-const siteUrl = process.env.URL || `https://gaiaevolutionspaandsalon.com/`
-
 
 module.exports = {
   siteMetadata: {
@@ -81,73 +79,64 @@ module.exports = {
         filterNode: () => true,
         mapNode: node => node
       }
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        "icon": "src/images/icon.png"
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-Z5TEGPK2P1", // Google Analytics / GA      
-        ],
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        query: `
-        {
-          allSitePage {
-            nodes {
-              path
-            }
-          }
-          allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
-            nodes {
-              ... on WpPost {
-                uri
-                modifiedGmt
-              }
-              ... on WpPage {
-                uri
-                modifiedGmt
-              }
-            }
-          }
-        }
-      `,
-        resolveSiteUrl: () => siteUrl,
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-          allWpContentNode: { nodes: allWpNodes },
-        }) => {
-          const wpNodeMap = allWpNodes.reduce((acc, node) => {
-            const { uri } = node
-            acc[uri] = node
-
-            return acc
-          }, {})
-
-          return allPages.map(page => {
-            return { ...page, ...wpNodeMap[page.path] }
-          })
-        },
-        serialize: ({ path, modifiedGmt }) => {
-          return {
-            url: path,
-            lastmod: modifiedGmt,
-          }
-        },
-      },
-    },
+    }
+    //,
+    // {
+    //   resolve: 'gatsby-plugin-manifest',
+    //   options: {
+    //     "icon": "src/images/icon.png"
+    //   }
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
+    //     trackingIds: [
+    //       "G-Z5TEGPK2P1", // Google Analytics / GA      
+    //     ],
+    //     pluginConfig: {
+    //       // Puts tracking script in the head instead of the body
+    //       head: true,
+    //     },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     exclude: ['/admin', '/confirmed'],
+    //     query: `
+    //     {
+    //       site {
+    //         siteMetadata {
+    //           siteUrl
+    //         }
+    //       }
+    //       allSitePage {
+    //         edges {
+    //           node {
+    //             path
+    //             context {
+    //               isCanonical
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   `,
+    //     serialize: ({ site, allSitePage }) => {
+    //       return allSitePage.edges
+    //         .filter(({ node }) => (
+    //           node.context.isCanonical !== false
+    //         ))
+    //         .map(({ node }) => {
+    //           return {
+    //             url: site.siteMetadata.siteUrl + node.path,
+    //             changefreq: 'daily',
+    //             priority: 0.7,
+    //           };
+    //         });
+    //     },
+    //   },
+    // }
   ]
 };
