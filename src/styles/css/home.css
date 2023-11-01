@@ -21,8 +21,9 @@
   display: none;
 }
 .CTVTS {
-  width: 80%;
-    transform: translate(-10%, -20%);
+    width: 80%;
+    transform: translate(10%, 10%);
+
 }
 
 .logo-footer {
@@ -80,7 +81,7 @@
 .contProduct {
   position: absolute;
   background: none;
-  top: 0%;
+  top: -5%;
 }
 
 .flecha {
@@ -215,11 +216,6 @@
   .scroll {
     display: none;
   }
-  .contProduct {
-    position: absolute;
-    background: none;
-    top: 8%;
-  }
  
 }
 
@@ -328,7 +324,12 @@
   }
   .CTVTS {
     width: 80%;
-    transform: translate(-10%, -20%);
+    transform: translate(33%, 15%);
+  }
+  .contProduct {
+    position: absolute;
+    background: none;
+    top: 0%;
   }
 }
 
@@ -376,6 +377,11 @@
   .CTVTS {
     width: 60%;
     transform: translate(50%, 100%);
+  }
+  .contProduct {
+    position: absolute;
+    background: none;
+    top: 0%;
   }
   
 }

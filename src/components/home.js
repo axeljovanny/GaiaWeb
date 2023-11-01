@@ -215,10 +215,10 @@ const Haircare = ({ children }) => {
                 <Hair className="HairSvg" fill={colors.softWhite} />
             </StyledSvg>
             <TextHair>
-                <motion.h3 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
-                    Gaia Evolution is an Aveda Exclusive Salon. Aveda is a naturally derived line, some ingredients are Certified Organic, 100% Vegan & Cruelty Free. Its natural components do a fantastic job taking care of the hair integrity and providing incredible results. You will find a wide variety of products for any hair type or concerns. Haircuts and color services are completely customized for each guest through a previous consultation.
-                </motion.h3>
-                <Link to="/hair">Go to Hair Care <Flecha className="flecha" stroke={colors.softWhite} /></Link>
+                <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
+                <Trans>HAIR_TEXT</Trans>
+                </motion.p>
+                <Link to="/hair"><Trans>HAIR_LINK</Trans><Flecha className="flecha" stroke={colors.softWhite} /></Link>
             </TextHair>
             <ImgSkin>
                 <ImageTratamients
@@ -301,10 +301,10 @@ const Bodycare = ({ children }) => {
                 </ImageTratamients>
             </ImgSkin>
             <TextSkin>
-                <motion.h3 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
-                    We strive to provide holistic and natural solutions to improve the quality of life and wellbeing in a real and meaningful way. We offer services that will do just that, from reiki, to body wraps, and body detoxification for weight loss and spiritual growth.
-                </motion.h3>
-                <Link to="/body">Go to Body Care <Flecha className="flecha" stroke={colors.green} /></Link>
+                <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
+                <Trans>BODY_TEXT</Trans>
+                </motion.p>
+                <Link to="/body"><Trans>BODY_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
             </TextSkin>
         </StyledTratamient>
     )

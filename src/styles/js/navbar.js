@@ -75,11 +75,13 @@ export const StyledItems = styled.div`
   display: flex;
   justify-content: space-between; ;
   align-items: center;
-  width: 20vw;
+  width: 30%;
   height: auto;
   background: ${colors.none};  
   `}
   ${above.xlarge`
+  width: 20%;
+
   `}
 
 `
@@ -112,6 +114,8 @@ a:hover{
   color: ${colors.accentBlue} ;
 
 }
+${above.xlarge` 
+`}
 `
 /*
  Movil menu

@@ -9,7 +9,7 @@ export const StyledFooter = styled.div`
   justify-content: center;
   width: 100%;
   height: 60vh;
-  background: ${colors.darkGreen};
+  background: ${colors.green};
 
   ${above.medium`
 

@@ -450,21 +450,22 @@ export const StyledProducts = styled.div`
   justify-content: center ;
   align-items: center;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   background: ${colors.none};
   ${above.medium`  
-  height: 55vh;
+  height: 60vh;
   `}
   ${above.large`  
-  height: 80vh;
-
-  
+  height: 70vh;
+  `}
+  ${above.xlarge`  
+  height: 60vh;
   `}
 `
 
 export const RectanguloProd = styled(motion.div)`
   width: 100%;
-  height: 90%;
+  height: 100%;
   background: ${colors.none};
   position: relative;
   display: flex;
@@ -788,7 +789,7 @@ background: ${colors.none};
 
 color: ${colors.softWhite};
 
-h3{
+p{
   text-align:justify;
   padding-top: 4%; 
   line-height: 150%; 
@@ -815,7 +816,7 @@ a{
   font-size: 22px;
   padding: 2em 0 0;
 }
-h3{
+p{
   text-align:justify;
   font-family: ${font.Llight};
   font-size: 22px;
@@ -832,7 +833,7 @@ a{
   font-size: 16px;
 
 }
-h3{
+p{
   text-align:justify;
   line-height: 160%; 
   font-family: ${font.Llight};
@@ -850,7 +851,7 @@ a{
   font-size: 20px;
   justify-content: flex-center ;
 }
-h3{
+p{
   padding: 0 2em 0 0;
   line-height: 160%; 
   text-align:justify;
@@ -868,7 +869,7 @@ export const StyledMaps = styled(motion.div)`
   flex-flow: row nowrap;
   width: 100vw;
   height: 50vh;
-  background: ${colors.softWhite};
+  background: ${colors.none};
   position: relative;
 
   ${above.medium`

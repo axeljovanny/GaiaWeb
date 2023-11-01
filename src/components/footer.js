@@ -60,14 +60,14 @@ const Footer = ({ children }) => (
                     <RS>
                         <FooterIcons>
                             <a href="https://www.facebook.com/GaiaEvolutionGroup/" rel="noreferrer" target="_blank">
-                                <FacebookIcon fill={colors.white} className="svgAbout" />
+                                <FacebookIcon fill={colors.white} className="svgAboutFoo" />
                             </a>
                             <a href="https://www.instagram.com/gaiaevolution/" rel="noreferrer" target="_blank">
 
-                                <InstagramIcon fill={colors.white} className="svgAbout" />
+                                <InstagramIcon fill={colors.white} className="svgAboutFoo" />
                             </a>
                             <a href="https://www.google.com/maps/place/Gaia+Evolution+Spa+and+Salon/@41.9245235,-87.7068398,19z/data=!3m2!4b1!5s0x880fcd657178d7e3:0x4804758ad15f5cf!4m5!3m4!1s0x880fcd65725634f9:0xf6193b2710f612ea!8m2!3d41.9245235!4d-87.7062926" rel="noreferrer" target="_blank">
-                                <MapsIcon fill={colors.white} className="svgAbout" />
+                                <MapsIcon fill={colors.white} className="svgAboutFoo" />
                             </a>
 
                         </FooterIcons>

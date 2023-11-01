@@ -11,9 +11,12 @@
 .svgAbout {
   transform: scale(1);
 }
+.svgAboutFoo {
+  transform: scale(1);
+}
 
 @media only screen and (min-width: 480px) {
-  .svgAbout {
+  .svgAboutFoo {
     transform: scale(1.5);
   }
 
@@ -38,7 +41,7 @@
   }
 }
 @media only screen and (min-width: 1140px) {
-  .svgAbout {
+  .svgAboutFoo {
     transform: scale(1.5);
   }
 

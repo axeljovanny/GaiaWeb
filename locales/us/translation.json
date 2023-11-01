@@ -7,5 +7,13 @@
     "SERVICE_TITTLE": "OUR SERVICES",
     "SKIN_SUBTITLE": "SKIN CARE",
     "SKIN_TEXT": "Our goal at Gaia Evolution is to provide effective, natural skincare solutions that promote skin wellness and holistic health. Through our partnership with Aveda and Eminence, we prioritize the use of organic, vegan, and cruelty-free products, ensuring that our clients experience the best of natural skincare and beauty.",
-    "SKIN_LINK": "Go to Skin Care Services"
+    "SKIN_LINK": "Go to Skin Care Services",
+    
+    "HAIR_SUBTITLE": "HAIR CARE",
+    "HAIR_TEXT": "Gaia Evolution is an Aveda Exclusive Salon. Aveda is a naturally derived line, some ingredients are Certified Organic, 100% Vegan & Cruelty Free. Its natural components do a fantastic job taking care of the hair integrity and providing incredible results. You will find a wide variety of products for any hair type or concerns. Haircuts and color services are completely customized for each guest through a previous consultation.",
+    "HAIR_LINK": "Go to Hair Care Services",
+
+    "BODY_SUBTITLE": "BODY CARE",
+    "BODY_TEXT": "We are dedicated to offering holistic and natural solutions that genuinely enhance the quality of life and overall well-being. Our range of services, including Reiki, body wraps, and body detoxification for weight loss and spiritual growth, is tailored to achieve just that.",
+    "BODY_LINK": "Go to Body Care Services"
 }
