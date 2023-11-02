@@ -11,30 +11,30 @@ import { Footer } from "../components"
 // Constantes
 import { About, HeroAbout } from "../components/about/about"
 import AboutGallery from "../components/about/gallery"
+import Layout from "../components/layout"
 
-
-const AboutPage = () => {
-
-  // graphql Background
-  const { backgroundImage123 } = useStaticQuery(
-    graphql`
-      query {
-        backgroundImage123: file(relativePath: {eq: "Backgrounds/About.jpg"}) {
-          childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              quality: 100
-              breakpoints:[750, 1080, 1366, 1920]
-              formats: [AUTO, WEBP, AVIF]
-              layout: FULL_WIDTH
-              webpOptions: {quality: 90}
-            )
-          }
+export const query = graphql`
+  query ($language: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
-    `
-  )
-  const image = getImage(backgroundImage123)
+    }
+  }
+`;
+
+const AboutPage = ({ data }) => {
+
+  const { siteUrl } = data.site.siteMetadata;
 
   const [isOpen, setIsOpen] = useState(false);
   const itemVariants = {
@@ -48,10 +48,8 @@ const AboutPage = () => {
 
 
   return (
-    < >
-      <BgImage image={image} className="mastheadHome">
-        <HeroAbout />
-      </BgImage>
+    <Layout>
+      <HeroAbout />
       <About/>
       <AboutGallery/>
       <Gift 
@@ -86,7 +84,7 @@ const AboutPage = () => {
       </Gift>
        <Navbar siteTitle="about"/>
       <Footer></Footer>
-    </>
+    </Layout>
   )
 };
 

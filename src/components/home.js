@@ -44,24 +44,24 @@ const Hero = ({ children }) => (
                 <GEMovil className="logo-movil" fill={colors.darkGreen} />
             </LogoPrincipal>
             <Social initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
-                <a href="https://www.facebook.com/GaiaEvolutionGroup" aria-label="Link al Perfil de Gaia Evolution en Facebook" rel="noreferrer" target="_blank">
+                <a id="facebook" href="https://www.facebook.com/GaiaEvolutionGroup" aria-label="Link al Perfil de Gaia Evolution en Facebook" rel="noreferrer" target="_blank">
                     <FacebookIcon fill={colors.darkGreen} className="svgAbout" />
                 </a>
-                <a href="https://www.instagram.com/gaiaspaandsalon/" aria-label="Link al Perfil de Gaia Evolution en Instagram" rel="noreferrer" target="_blank">
+                <a id="instagram" href="https://www.instagram.com/gaiaspaandsalon/" aria-label="Link al Perfil de Gaia Evolution en Instagram" rel="noreferrer" target="_blank">
 
                     <InstagramIcon fill={colors.darkGreen} className="svgAbout" />
                 </a>
-                <a href="https://www.tiktok.com/@gaiaevolution" aria-label="Link al Perfil de Gaia Evolution en TikTok" rel="noreferrer" target="_blank">
+                <a id="tiktok" href="https://www.tiktok.com/@gaiaevolution" aria-label="Link al Perfil de Gaia Evolution en TikTok" rel="noreferrer" target="_blank">
                     <TiktokIcon fill={colors.darkGreen} className="svgAbout" />
                 </a>
             </Social>
             <PhoneLogo>
-                <motion.a
+                <motion.a id="phoneNumber"  aria-label="Gaia Evolution Phone number"
                     whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                     whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
                     <Phone fill={colors.softWhite} className="phone" />
                 </motion.a>
-                <motion.a
+                <motion.a id="phoneMovil" aria-label="Gaia Evolution Phone number"
                     whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                     whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
                     <p>773-799-8843</p>
@@ -73,8 +73,10 @@ const Hero = ({ children }) => (
             </Scroll>
         </StyledHome >
         <StyledBannerHome>
-            <p>Book a facial today and receive <b>20% OFF</b> on Aveda SPF 30 or Purifying Creme Cleanser
-                * Fist time clients *</p>
+            <p><Trans>PROMO_1</Trans></p>
+            <p><Trans>PROMO_DISCOUNT</Trans></p>
+            <p><Trans>PROMO_2</Trans></p>
+            <p><Trans>PROMO_TERMS</Trans></p>
         </StyledBannerHome>
     </>
 
@@ -101,7 +103,7 @@ const Wedo = ({ children }) => {
                     <motion.h1 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TITTLE</Trans></motion.h1>
                     <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_SUBTITTLE</Trans></motion.h2>
                     <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TEXT</Trans></motion.p>
-                    <Link to="/about"><Trans>WEDO_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
+                    <Link id="wedoabout" to="/about" aria-label="See More about Gaia Evolution"><Trans>WEDO_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
                 </TextWedo>
                 <ImgsWedo>
                     <ImageWedo initial={{ opacity: 0, y: 10 }} animate={{ y: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} style={{ y: y1 }}>
@@ -174,7 +176,7 @@ const Skincare = ({ children }) => {
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }} >
                     <Trans>SKIN_TEXT</Trans>
                 </motion.p>
-                <Link to="/skin"><Trans>SKIN_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
+                <Link id="skinPage" to="/skin"><Trans>SKIN_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
             </TextSkin>
         </StyledTratamient>
     )
@@ -218,7 +220,7 @@ const Haircare = ({ children }) => {
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
                 <Trans>HAIR_TEXT</Trans>
                 </motion.p>
-                <Link to="/hair"><Trans>HAIR_LINK</Trans><Flecha className="flecha" stroke={colors.softWhite} /></Link>
+                <Link id="hair" to="/hair"><Trans>HAIR_LINK</Trans><Flecha className="flecha" stroke={colors.softWhite} /></Link>
             </TextHair>
             <ImgSkin>
                 <ImageTratamients
@@ -304,7 +306,7 @@ const Bodycare = ({ children }) => {
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
                 <Trans>BODY_TEXT</Trans>
                 </motion.p>
-                <Link to="/body"><Trans>BODY_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
+                <Link id="body" to="/body"><Trans>BODY_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
             </TextSkin>
         </StyledTratamient>
     )
@@ -357,7 +359,7 @@ const Maps = ({ children }) => {
     return (
         <StyledMaps initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
             <TextMaps movil>
-                <a href="https://www.google.com/maps/place/Gaia+Evolution+Spa+and+Salon/@41.9245235,-87.7068398,19z/data=!3m2!4b1!5s0x880fcd657178d7e3:0x4804758ad15f5cf!4m5!3m4!1s0x880fcd65725634f9:0xf6193b2710f612ea!8m2!3d41.9245235!4d-87.7062926" rel="noreferrer" target="_blank"> Gaia Evolution in Google Maps <Flecha className="flecha" stroke={colors.green} /></a >
+                <a id="googleMap" aria-label="Gaia Evolution in Google Maps" href="https://www.google.com/maps/place/Gaia+Evolution+Spa+and+Salon/@41.9245235,-87.7068398,19z/data=!3m2!4b1!5s0x880fcd657178d7e3:0x4804758ad15f5cf!4m5!3m4!1s0x880fcd65725634f9:0xf6193b2710f612ea!8m2!3d41.9245235!4d-87.7062926" rel="noreferrer" target="_blank"> Gaia Evolution in Google Maps <Flecha className="flecha" stroke={colors.green} /></a >
             </TextMaps>
             <ImgMap>
                 <StaticImage
@@ -372,7 +374,7 @@ const Maps = ({ children }) => {
             <TransMap />
             <TextMaps>
                 <CTVTS className="CTVTS" fill={colors.green} ></CTVTS>
-                <a href="https://www.google.com/maps/place/Gaia+Evolution+Spa+and+Salon/@41.9245235,-87.7068398,19z/data=!3m2!4b1!5s0x880fcd657178d7e3:0x4804758ad15f5cf!4m5!3m4!1s0x880fcd65725634f9:0xf6193b2710f612ea!8m2!3d41.9245235!4d-87.7062926" rel="noreferrer" target="_blank"> Gaia Evolution in Google Maps <Flecha className="flecha" stroke={colors.green} /></a >
+                <a id="mapMovil" aria-label="Gaia Evolution Googlemaps link" href="https://www.google.com/maps/place/Gaia+Evolution+Spa+and+Salon/@41.9245235,-87.7068398,19z/data=!3m2!4b1!5s0x880fcd657178d7e3:0x4804758ad15f5cf!4m5!3m4!1s0x880fcd65725634f9:0xf6193b2710f612ea!8m2!3d41.9245235!4d-87.7062926" rel="noreferrer" target="_blank"> Gaia Evolution in Google Maps <Flecha className="flecha" stroke={colors.green} /></a >
             </TextMaps>
         </StyledMaps>
     );

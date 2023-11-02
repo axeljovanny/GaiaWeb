@@ -32,26 +32,26 @@ const Navbar = ({ siteTitle }) => {
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
-                        <Link to="/hair"> HAIR CARE </Link>
+                        <Link id="navHairCareAbout" to="/hair"> HAIR CARE </Link>
                     </ItemNav>
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
-                        <Link to="/skin"> SKIN CARE </Link>
+                        <Link id="navSkinCareAbout" to="/skin"> SKIN CARE </Link>
                     </ItemNav>
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
-                        <Link to="/body"> BODY CARE </Link>
+                        <Link id="navBodyCareAbout" to="/body"> BODY CARE </Link>
                     </ItemNav>
                 </StyledItems>
 
                 <StyledLogoContainer>
-                    <Link to="/">
+                    <Link to="/" id="navhomeAbout">
                         <StaticImage
                             className="logo"
                             src="../images/logo.png"
-                            alt="imagen de prueba"
+                            alt="Gaia Evolution Logo - Home Button"
                             loading="eager"
                             layout="constrained"
                             breakpoints={[750, 1080, 1366, 1920]}
@@ -65,19 +65,19 @@ const Navbar = ({ siteTitle }) => {
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
-                        <Link to="/policies"> POLICIES </Link>
+                        <Link id="navPoliciesAbout" to="/policies"> POLICIES </Link>
                     </ItemNav>
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
-                        <Link to="/"> ABOUT US </Link>
+                        <Link id="navAboutUs" to="/"> ABOUT US </Link>
                     </ItemNav>
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, fill: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
                         <a href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
                             rel="noreferrer"
-                            target="_blank">
+                            target="_blank" id="navAvedaShop" aria-label="Gaia Evolution AvedaShop link">
                             <AvedaCompleto fill={colors.white} /></a>
                     </ItemNav>
                 </StyledItems>
@@ -94,22 +94,22 @@ const Navbar = ({ siteTitle }) => {
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link to="/hair"> HAIR CARE </Link>
+                            <Link id="navHair" to="/hair"> HAIR CARE </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link to="/skin"> SKIN CARE </Link>
+                            <Link id="navSkin" to="/skin"> SKIN CARE </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link to="/body"> BODY CARE </Link>
+                            <Link id="navBody" to="/body"> BODY CARE </Link>
                         </ItemNav>
                     </StyledItems>
 
                     <StyledLogoContainer>
-                        <Link to="/">
+                        <Link id="navHome" to="/" aria-label="Gaia Evolution Logo - Home Button">
                             <Logo className="logo" fill={colors.darkGreen} />
                         </Link>
                     </StyledLogoContainer>
@@ -118,19 +118,19 @@ const Navbar = ({ siteTitle }) => {
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link to="/policies"> POLICIES </Link>
+                            <Link id="navPolicies" to="/policies"> POLICIES </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link to="/about"> ABOUT US </Link>
+                            <Link id="navAboutUsHome" to="/about" aria-label="Gaia Evolution About page link"> ABOUT US </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, fill: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <a href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
+                            <a id="navAvedaShop" href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
                                 rel="noreferrer"
-                                target="_blank">
+                                target="_blank" aria-label="Gaia Evolution AvedaShop link">
                                 <AvedaCompleto fill={colors.green} /></a>
                         </ItemNav>
                     </StyledItems>

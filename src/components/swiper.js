@@ -86,7 +86,7 @@ export default function SwiperF() {
                     },
                 }}
             >
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba1">
                     <RectanguloProd 
                         initial="rest" 
                         whileHover="hover" 
@@ -109,7 +109,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba2">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -130,7 +130,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba3">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -152,7 +152,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba4">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -174,7 +174,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba5">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -196,7 +196,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba6">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -218,7 +218,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba7">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -240,7 +240,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba8">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -262,7 +262,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba9">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -284,7 +284,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba10">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -306,7 +306,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba11">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -328,7 +328,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba12">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -351,7 +351,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba13">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -374,7 +374,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba14">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -397,7 +397,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba15">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -420,7 +420,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba16">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -443,7 +443,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba17">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -466,7 +466,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba18">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -489,7 +489,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba19">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -512,7 +512,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba20">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -535,7 +535,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba21">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -558,7 +558,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba22">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -581,7 +581,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba23">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -604,7 +604,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba24">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -627,7 +627,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba25">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>
@@ -650,7 +650,7 @@ export default function SwiperF() {
                         </TextProduct>
                     </RectanguloProd>           
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide id="textoprueba26">
                     <RectanguloProd 
                         initial="rest" whileHover="hover" animate="rest">
                         <Rectangulo/>

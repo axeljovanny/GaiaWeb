@@ -39,14 +39,14 @@ const ServiceNav = ({ siteTitle }) => {
                         transition={{ ease: "linear" }}
                     ><Flecha className="flechaHome" stroke={colors.green} />
                     </motion.div>
-                    <Link to="/">
+                    <Link id="home" to="/">
                         HOME
                     </Link>
                 </StyledHomeReturn>
                 <StyledNavbarServ>
                     <Text>
                         <StyledService siteTitle="skin" select={siteTitle}>
-                            <Link to="/skin">
+                            <Link id="skin" to="/skin">
                                 <motion.p
                                     /* ANIMACION */
 
@@ -59,7 +59,7 @@ const ServiceNav = ({ siteTitle }) => {
                             </Link>
                         </StyledService>
                         <StyledService siteTitle="hair" select={siteTitle}>
-                            <Link to="/hair">
+                            <Link id="hair" to="/hair">
                                 <motion.p
                                     /* ANIMACION */
 
@@ -72,7 +72,7 @@ const ServiceNav = ({ siteTitle }) => {
                             </Link>
                         </StyledService>
                         <StyledService siteTitle="body" select={siteTitle}>
-                            <Link to="/body">
+                            <Link id="body" to="/body">
                                 <motion.p
                                     /* ANIMACION */
 

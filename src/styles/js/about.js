@@ -14,7 +14,7 @@ export const StyledAbout = styled.div`
   width: 100vw;
   height: 100vh;
   padding-top: 0%;
-  background: rgba(130, 140, 122, 0.7);
+  background: rgba(130, 140, 122, 0.5);
   overflow-x: hidden;
   ${above.large`  
   grid-template-rows: repeat(2); 

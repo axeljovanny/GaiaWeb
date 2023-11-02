@@ -33,10 +33,10 @@ export const StyledBannerHome = styled.div`
   text-align: center;
 
   p{
-    width: 90%;
+    margin: 0 2px;
     font-family: ${font.Lregular};
     font-size: ${size.Mtext};
-    color: ${colors.softYellow};
+    color: ${colors.softWhite};
   }
 
   ${above.large` 
@@ -44,7 +44,7 @@ export const StyledBannerHome = styled.div`
   p{
     font-family: ${font.Lregular};
     font-size: ${size.Wtext};
-    color: ${colors.softYellow};
+    color: ${colors.softWhite};
   }
   `}
 `
@@ -546,7 +546,7 @@ export const TextProduct = styled (motion.div)`
   `}
   `
 
-export const DescProduct = styled (motion.a)`
+export const DescProduct = styled (motion.p)`
     display: ${props => (props.movil ? "flex" : "none")};
     color: ${colors.green};
     font-family: ${font.Lregular};

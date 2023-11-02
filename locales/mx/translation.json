@@ -15,7 +15,12 @@
 
     "BODY_SUBTITLE": "BODY CARE",
     "BODY_TEXT": "We are dedicated to offering holistic and natural solutions that genuinely enhance the quality of life and overall well-being. Our range of services, including Reiki, body wraps, and body detoxification for weight loss and spiritual growth, is tailored to achieve just that.",
-    "BODY_LINK": "Go to Body Care Services"
+    "BODY_LINK": "Go to Body Care Services",
+
+    "PROMO_1":"Book a facial today and receive ",
+    "PROMO_DISCOUNT":"20% OFF",
+    "PROMO_2":"on Aveda SPF 30 or Purifying Creme Cleanser",
+    "PROMO_TERMS":"* Fist time clients *"
 
 
 }

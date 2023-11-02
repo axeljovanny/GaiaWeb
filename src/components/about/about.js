@@ -7,54 +7,68 @@ import { CircleNature, LogoPrincipal, PhoneLogo, Scroll, Social } from "../../st
 import { colors } from "../../utils/const"
 // SVG
 import { FacebookIcon, InstagramIcon, TiktokIcon } from "../../images/icons"
-import { Phone, GEWeb, GEMovil, ScrollArrow } from "../../assets/Home"
+import { Phone, GEWeb, GEMovil, ScrollArrow, Circle, CircleMovil } from "../../assets/Home"
 // CSS
 import "../../styles/css/home.css"
 import { HairText, ImgArc, ImgOne, ImgVM, OurServicesText, ReikiText, ServicesText, SkinText, StyledAbout, StyledFirst, StyledFour, StyledPeopleSay, StyledText, StyledThree, StyledTwo, TexFive, TexFive2, TexFour, TexThree, TextOne, TexTwo } from "../../styles/js/about.js"
 import { StaticImage } from "gatsby-plugin-image"
 import PeopleSay from "./people.js"
+import { IFondoAbout } from "../imagesComponets.js"
 
 const HeroAbout = ({ children }) => (
-    <>
+    <>  
+        <IFondoAbout/>
         <StyledAbout>
-            <CircleNature />
-            <LogoPrincipal>
+        <CircleNature >
                 <motion.div
-                    className="LogoPrincipal"
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 2.1, ease: "easeInOut", type: "spring", delay: 1 }}>
-                    <GEWeb className="logo-web" fill={colors.white} />
-                    <GEMovil className="logo-movil" fill={colors.white} />
+                    className="container"
+                    animate={{ rotate: -2160 }}
+                    transition={{ repeat: Infinity, duration: 300, ease: "linear" }}
+                    whileHover={{ rotate: -4320, speed: 200 }}>
+                    <Circle className="circle" fill={colors.softWhite} />
                 </motion.div>
+                <motion.div
+                    className="container"
+                    animate={{ rotate: 2160 }}
+                    transition={{ repeat: Infinity, duration: 300, ease: "linear" }}
+                    whileHover={{ rotate: -4320, speed: 200 }}>
+                    <CircleMovil className="circle-movil" fill={colors.softWhite} />
+                </motion.div>
+            </CircleNature>
+            <LogoPrincipal
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2.1, ease: "easeInOut", type: "spring", delay: 1 }}>
+                <GEWeb className="logo-web" fill={colors.softWhite} />
+                <GEMovil className="logo-movil" fill={colors.softWhite} />
             </LogoPrincipal>
             <Social initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
-                <a href="https://www.facebook.com/GaiaEvolutionGroup/" rel="noreferrer" target="_blank">
-                    <FacebookIcon fill={colors.white} className="svgAbout" />
+                <a href="https://www.facebook.com/GaiaEvolutionGroup" aria-label="Link al Perfil de Gaia Evolution en Facebook" rel="noreferrer" target="_blank">
+                    <FacebookIcon fill={colors.softWhite} className="svgAbout" />
                 </a>
-                <a href="https://www.instagram.com/gaiaevolution/" rel="noreferrer" target="_blank">
+                <a href="https://www.instagram.com/gaiaspaandsalon/" aria-label="Link al Perfil de Gaia Evolution en Instagram" rel="noreferrer" target="_blank">
 
-                    <InstagramIcon fill={colors.white} className="svgAbout" />
+                    <InstagramIcon fill={colors.softWhite} className="svgAbout" />
                 </a>
-                <a href="https://www.google.com/maps/place/Gaia+Evolution+Spa+and+Salon/@41.9245235,-87.7068398,19z/data=!3m2!4b1!5s0x880fcd657178d7e3:0x4804758ad15f5cf!4m5!3m4!1s0x880fcd65725634f9:0xf6193b2710f612ea!8m2!3d41.9245235!4d-87.7062926" rel="noreferrer" target="_blank">
-                    <TiktokIcon fill={colors.white} className="svgAbout" />
+                <a href="https://www.tiktok.com/@gaiaevolution" aria-label="Link al Perfil de Gaia Evolution en TikTok" rel="noreferrer" target="_blank">
+                    <TiktokIcon fill={colors.softWhite} className="svgAbout" />
                 </a>
             </Social>
-            <PhoneLogo initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 2.5 }}>
+            <PhoneLogo>
                 <motion.a
-                    whileHover={{ priginX: 0, color: colors.accentBlue }}
+                    whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                     whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
-                    <Phone fill={colors.white} className="phone" />
+                    <Phone fill={colors.softWhite} className="phone" />
                 </motion.a>
                 <motion.a
-                    whileHover={{ priginX: 0, color: colors.accentBlue }}
+                    whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                     whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
                     <p>773-799-8843</p>
                 </motion.a>
             </PhoneLogo>
             <Scroll>
-                <ScrollArrow fill={colors.white} className="scroll" />
-                {/* <ScrollArrow fill={colors.white} className="scroll-movil" /> */}
+                {/* <ScrollArrow fill={colors.darkGreen} className="scroll" />
+                <ScrollArrow fill={colors.white} className="scroll-movil" /> */}
             </Scroll>
         </StyledAbout >
     </>

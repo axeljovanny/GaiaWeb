@@ -33,14 +33,14 @@ export const MenuItem = ({ toggle }) => {
     return (
         <>
             <StyledIcons variants={variants}>
-                <motion.a
+                <motion.a id="facebookMenu" 
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     href="https://www.facebook.com/GaiaEvolutionGroup/" rel="noreferrer" target="_blank">
                     <FacebookIcon fill={colors.white} className="svgAbout" />
                 </motion.a>
-                <motion.a
+                <motion.a id="instagramMenu"
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -48,7 +48,7 @@ export const MenuItem = ({ toggle }) => {
 
                     <InstagramIcon fill={colors.white} className="svgAbout" />
                 </motion.a >
-                <motion.a
+                <motion.a id="mapsMenu" 
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -58,37 +58,37 @@ export const MenuItem = ({ toggle }) => {
             </StyledIcons>
             <OverlayMenu variants={variants}>
                 <Item>
-                    <Link to="/">
+                    <Link id="homeMenu" to="/">
                         HOME
                     </Link>
                 </Item>
                 <Item>
-                    <Link to="/skin">
+                    <Link id="skinMenu" to="/skin">
                         SKIN CARE
                     </Link>
                 </Item>
                 <Item>
-                    <Link to="/hair">
+                    <Link id="hairMenu" to="/hair">
                         HAIR CARE
                     </Link>
                 </Item>
                 <Item>
-                    <Link to="/body">
+                    <Link id="bodyMenu" to="/body">
                         BODY CARE
                     </Link>
                 </Item>
                 <Item>
-                    <Link to="/about">
+                    <Link id="aboutMenu" to="/about" aria-label="Gaia Evolution About page link">
                         ABOUT
                     </Link>
                 </Item>
                 <Item>
-                    <a href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
+                    <a id="avedaShopMenu" href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
                         rel="noreferrer"
                         target="_blank"> AVEDA SHOP</a>
                 </Item>
                 <Item>
-                    <Link to="/policies">
+                    <Link id="policiesMenu" to="/policies">
                         POLICIES
                     </Link>
                 </Item>
@@ -107,7 +107,7 @@ export const MenuItem = ({ toggle }) => {
                     />
                 </Logo>
                 <Contacto>
-                    <a href="tel:773-799-8843">773-799-8843</a>
+                    <a id="phoneMenu" href="tel:773-799-8843">773-799-8843</a>
                     <a href="mailto:gaiaevolution@icloud.com">
                         gaiaevolution@icloud.com
                     </a>

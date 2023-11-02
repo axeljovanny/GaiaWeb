@@ -27,6 +27,27 @@ export function IFondoHeader() {
 
 }
 
+export function IFondoAbout() {
+    return <StaticImage
+        src="../images/Backgrounds/About.jpg"
+        alt="Fondo de header, imagen de una planta"
+        layout="fullWidth"
+        loading="eager"
+        placeholder="blurred"
+        quality='100'
+        formats={['auto', 'webp']}
+        style={{
+            position: 'absolute',
+            zIndex: '-1',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+        }}
+    />
+
+}
+
 export function IWedoArco() {
     return <StaticImage
     src="../images/Home/PNG/WWDArco.png"
