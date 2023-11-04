@@ -19,10 +19,10 @@ const Footer = ({ children }) => (
                         3143 W. Fullerton Ave. Chicago, IL
                     </p>
                     <p className="tel1" >
-                        <a id="footerPhone" aria-label="Footer Gaia Evolution Phone Number" href="tel:773-799-8843">773-799-8843</a>
+                        <a id="footerPhone" aria-label="Footer Phone" href="tel:773-799-8843">773-799-8843</a>
                     </p>
                     <p className="email">
-                        <a id="footerEmail" aria-label="Footer Gaia Evolution email" href="mailto:gaiaevolution@icloud.com">
+                        <a id="footerEmail1" aria-label="Footer Email 1" href="mailto:gaiaevolution@icloud.com">
                             gaiaevolution@icloud.com
                         </a>
                     </p>
@@ -37,7 +37,7 @@ const Footer = ({ children }) => (
                 <CompanyLiks>
                     <Liks>
                         <Link to="/about" id="footerabout" aria-label="Gaia Evolution About page link"> About </Link>
-                        <a id="footeremail" aria-label="Gaia Evolution email" href="mailto:gaiaevolution@icloud.com">Contact Us</a>
+                        <a id="footerEmail" aria-label="Footer email" href="mailto:gaiaevolution@icloud.com">Contact Us</a>
                         <Link to="/policies" id="footerpolicies"> Policies </Link>
                         <a id="footersitemap" aria-label="Gaia Evolution sitemap" href="https://gaiaevolutionspaandsalon.com/sitemap/sitemap-index.xml">Sitemap</a>
                     </Liks>
@@ -47,7 +47,7 @@ const Footer = ({ children }) => (
                         <Link to="/skin" id="footerskin"> Skin Care </Link>
                         <Link to="/body" id="footerbody"> Body Care </Link>
                         <Link to="/hair" id="footerhair"> Hair Care </Link>
-                        <a id="avedaShopFooter" aria-label="Gaia Evolution Aved Shop" href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
+                        <a id="avedaShopFooter" aria-label="Aveda Shop Footer" href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
                             rel="noreferrer"
                             target="_blank">
                             Aveda Shop</a>
@@ -74,7 +74,7 @@ const Footer = ({ children }) => (
                     </RS>
                 </SocialLiks>
                 <Credits>
-                    <CreditsNote><motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.3, delay: .9, ease: "backInOut" }}> © Gaia Evolution Spa & Salon  {(new Date().getFullYear())} | <a id="websiteDeveloper" aria-label="Website Developer" href="https://luckyducky.studio/" rel="noreferrer" target="_blank">Lucky Ducky Studio</a></motion.p></CreditsNote>
+                    <CreditsNote><motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.3, delay: .9, ease: "backInOut" }}> © Gaia Evolution Spa & Salon  {(new Date().getFullYear())} | <a id="luckyDuckyStudio" aria-label="Lucky Ducky Studio" href="https://luckyducky.studio/" rel="noreferrer" target="_blank">Lucky Ducky Studio</a></motion.p></CreditsNote>
                 </Credits>
 
             </StyledContainer>

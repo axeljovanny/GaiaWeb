@@ -56,12 +56,12 @@ const Hero = ({ children }) => (
                 </a>
             </Social>
             <PhoneLogo>
-                <motion.a id="phoneNumber"  aria-label="Gaia Evolution Phone number"
+                <motion.a id="phoneNumber"  aria-label="Phone number"
                     whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                     whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
                     <Phone fill={colors.softWhite} className="phone" />
                 </motion.a>
-                <motion.a id="phoneMovil" aria-label="Gaia Evolution Phone number"
+                <motion.a id="phoneMovil" aria-label="Phone Movil"
                     whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                     whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
                     <p>773-799-8843</p>
