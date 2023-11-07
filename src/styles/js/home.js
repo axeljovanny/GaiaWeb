@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 export const StyledHome = styled.div`
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   display: grid; 
   grid-template-columns: 20% 60% 20%; 
   grid-template-rows: 20% 60% 20%; 
@@ -19,6 +19,7 @@ export const StyledHome = styled.div`
   background: ${colors.none};
   overflow-x: hidden;
   ${above.large`  
+  height: 95vh;
   grid-template-rows: 60% 40%; 
   `}
 `
@@ -27,8 +28,9 @@ export const StyledBannerHome = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
   background: ${colors.green};
   text-align: center;
 
@@ -40,6 +42,7 @@ export const StyledBannerHome = styled.div`
   }
 
   ${above.large` 
+  flex-direction: row;
   height: 5vh;
   p{
     font-family: ${font.Lregular};
