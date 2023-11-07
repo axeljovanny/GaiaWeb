@@ -36,7 +36,7 @@ export const query = graphql`
 
 
 const IndexPage = ({ data }) => {
-  const canonicalUrl = "https://luckyducky.studio";
+  const canonicalUrl = "https://gaiaevolutionspaandsalon.com";
   const { siteUrl } = data.site.siteMetadata;
 
   const [isOpen, setIsOpen] = useState(false);
