@@ -78,7 +78,7 @@ export const MenuItem = ({ toggle }) => {
                     </Link>
                 </Item>
                 <Item>
-                    <Link id="aboutMenu" to="/about" aria-label="Gaia Evolution About page link">
+                    <Link id="aboutMenu" to="/" aria-label="Gaia Evolution About page link">
                         ABOUT
                     </Link>
                 </Item>

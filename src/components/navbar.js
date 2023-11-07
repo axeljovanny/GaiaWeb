@@ -123,7 +123,7 @@ const Navbar = ({ siteTitle }) => {
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
-                            <Link id="navAboutUsHome" to="/about" aria-label="Gaia Evolution About page link"> ABOUT US </Link>
+                            <Link id="navAboutUsHome" to="/" aria-label="Gaia Evolution About page link"> ABOUT US </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, fill: colors.accentBlue }}

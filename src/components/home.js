@@ -103,7 +103,7 @@ const Wedo = ({ children }) => {
                     <motion.h1 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TITTLE</Trans></motion.h1>
                     <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_SUBTITTLE</Trans></motion.h2>
                     <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TEXT</Trans></motion.p>
-                    <Link id="wedoabout" to="/about" aria-label="See More about Gaia Evolution"><Trans>WEDO_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
+                    <Link id="wedoabout" to="/" aria-label="See More about Gaia Evolution"><Trans>WEDO_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
                 </TextWedo>
                 <ImgsWedo>
                     <ImageWedo initial={{ opacity: 0, y: 10 }} animate={{ y: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} style={{ y: y1 }}>
