@@ -79,27 +79,26 @@ module.exports = {
         filterNode: () => true,
         mapNode: node => node
       }
-    }
-    //,
-    // {
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     "icon": "src/images/icon.png"
-    //   }
-    // },
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
-    //     trackingIds: [
-    //       "G-Z5TEGPK2P1", // Google Analytics / GA      
-    //     ],
-    //     pluginConfig: {
-    //       // Puts tracking script in the head instead of the body
-    //       head: true,
-    //     },
-    //   },
-    // },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/icon.png"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-Z5TEGPK2P1", // Google Analytics / GA      
+        ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-sitemap`,
     //   options: {
