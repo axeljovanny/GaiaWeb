@@ -535,7 +535,6 @@ export const TextProduct = styled (motion.div)`
   `}
 
   ${above.xlarge` 
-  background: ${colors.none};
   display: flex;
 
   h3{

@@ -79,9 +79,9 @@
 }
 
 .contProduct {
-  position: relative;
+  position: absolute;
   background: none;
-  top: -5%;
+  top: 10%;
 }
 
 .flecha {
@@ -291,6 +291,10 @@ bottom: 0;
     width: 60vw;
   }
   .Skin {
+    width: 100%;
+  }
+  .Hair{
+    width: 90%;
   }
   .Hair img{
     transform: translate(60%, 0%);
@@ -326,9 +330,9 @@ bottom: 0;
     transform: translate(33%, 15%);
   }
   .contProduct {
-    position: relative;
+    position: absolute;
     background: none;
-    top: 0%;
+    top: 10%;
   }
 }
 
@@ -350,7 +354,7 @@ bottom: 0;
   .HairSvg {
     position: absolute;
     transform: translate(-10%, -25vh) scale(0.6);
-    width: 90%;
+    width: 100%;
   }
 
   .ProductsSvg {
@@ -377,9 +381,9 @@ bottom: 0;
     transform: translate(50%, 100%);
   }
   .contProduct {
-    position: relative;
+    position: absolute;
     background: none;
-    top: 0%;
+    top: 10%;
   }
   
 }

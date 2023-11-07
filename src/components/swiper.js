@@ -136,7 +136,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/B-Leavein.png"
                             alt="producto"
                             height={270}
@@ -158,7 +158,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/N-Shampoo.png"
                             alt="producto"
                             height={270}
@@ -180,7 +180,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/N-Conditioner.png"
                             alt="producto"
                             height={270}
@@ -202,7 +202,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/N-Leavein.png"
                             alt="producto"
                             height={270}
@@ -224,7 +224,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/I-shampoorich.png"
                             alt="producto"
                             height={270}
@@ -246,7 +246,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/I-ThickeningConditioner.png"
                             alt="producto"
                             height={270}
@@ -268,7 +268,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/I-Scalp.png"
                             alt="producto"
                             height={270}
@@ -312,7 +312,7 @@ export default function SwiperF() {
                         <Rectangulo/>
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/K-Grèmecleanser.png"
                             alt="producto"
                             height={270}
@@ -335,7 +335,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/LiquidExfoliant.png"
                             alt="producto"
                             height={270}
@@ -358,7 +358,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/SkinToningAgent.png"
                             alt="producto"
                             height={270}
@@ -381,7 +381,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/hydratting-treatment-lotion.png"
                             alt="producto"
                             height={270}
@@ -404,7 +404,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/intensehydrator.png"
                             alt="producto"
                             height={270}
@@ -427,7 +427,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/BrightConcentrate.png"
                             alt="producto"
                             height={270}
@@ -450,7 +450,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/talasarafirm.png"
                             alt="producto"
                             height={270}
@@ -473,7 +473,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/T-renewingradiancecrème2.png"
                             alt="producto"
                             height={270}
@@ -496,7 +496,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/B-IntenseHydratingSoftCrème.png"
                             alt="producto"
                             height={270}
@@ -519,7 +519,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/hydrating water gel creme.png"
                             alt="producto"
                             height={270}
@@ -542,7 +542,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/Shampure hand and body wash.png"
                             alt="producto"
                             height={270}
@@ -565,7 +565,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/radiance polish.png"
                             alt="producto"
                             height={270}
@@ -588,7 +588,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/beautifying body mois.png"
                             alt="producto"
                             height={270}
@@ -611,7 +611,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/shampure body.png"
                             alt="producto"
                             height={270}
@@ -634,7 +634,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/Hand relief moisturizing crème.png"
                             alt="producto"
                             height={270}
@@ -657,7 +657,7 @@ export default function SwiperF() {
                         <motion.div className="contProduct" variants={animImg}>
                         <StaticImage
                             /* className="contProduct" */
-                            imgClassName="imgProduct"
+                            // imgClassName="imgProduct"
                             src="../images/Products/PNG/Hand Relief Night Renewal Serum.png"
                             alt="producto"
                             height={270}
