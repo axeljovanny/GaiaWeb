@@ -322,13 +322,15 @@ const Products = ({ children }) => {
             <BannerProducts>
                 <StaticImage
                     className="Favorite"
-                    layout="fullWidth"
                     src="../images/Home/PNG/FPArco.png"
                     alt="Spa Image"
-                    loading="lazy"
-                    formats={['auto', 'webp', 'avif']}
-                    breakpoints={[750, 1080, 1366, 1920]}
-                    quality='100'
+                    placeholder="blurred"
+                    loading="eager"
+                    formats={['auto', 'webp']}
+                    quality='90'
+                    style={{
+                        position: "absolute"
+                    }}
                 />
                 <BannerSvg
                     initial={{ opacity: 0 }}
