@@ -134,13 +134,15 @@ const Skincare = ({ children }) => {
                 style={{ y: y2, bottom: 0, left: 0 }}>
                 <StaticImage
                     className="Skin"
-                    imgClassName=""
                     src="../images/Home/PNG/SkinCareMovil.png"
                     alt="Spa Image"
-                    breakpoints={[750, 1080, 1366, 1920]}
+                    placeholder="blurred"
                     loading="lazy"
-                    formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    formats={['auto', 'webp']}
+                    quality='90'
+                    style={{
+                        position: "absolute"
+                    }}
                 />
             </ImageTratamients>
             <StyledSvg
@@ -198,13 +200,16 @@ const Haircare = ({ children }) => {
                 style={{ y: y2, bottom: 0, right: 0 }}>
                 <StaticImage
                     className="Hair"
-                    imgClassName=""
                     src="../images/Home/PNG/HairCareMovil.png"
-                    alt="Spa Image"
+                    alt="Spa Image"      
+                    placeholder="blurred"
                     breakpoints={[750, 1080, 1366, 1920]}
-                    loading="lazy"
-                    formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    loading="eager"
+                    formats={['auto', 'webp']}
+                    quality='90'
+                    style={{
+                        position: "absolute"
+                    }}
                 />
             </ImageTratamients>
             <StyledSvg
@@ -264,13 +269,15 @@ const Bodycare = ({ children }) => {
                 style={{ y: y2, bottom: 0, left: 0 }}>
                 <StaticImage
                     className="Skin"
-                    imgClassName=""
                     src="../images/Home/PNG/BodyCareMovil.png"
                     alt="Spa Image"
-                    breakpoints={[750, 1080, 1366, 1920]}
+                    placeholder="blurred"
                     loading="lazy"
-                    formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    formats={['auto', 'webp']}
+                    quality='90'
+                    style={{
+                        position: "absolute"
+                    }}
                 />
             </ImageTratamients>
             <StyledSvg

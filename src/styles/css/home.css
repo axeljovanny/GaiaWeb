@@ -79,7 +79,7 @@
 }
 
 .contProduct {
-  position: absolute;
+  position: relative;
   background: none;
   top: -5%;
 }
@@ -109,8 +109,9 @@
 }
 
 .Skin {
-  position: absolute;
-
+  width: 180px;
+  left: 0;
+  bottom: 0;
 }
 .Favorite {
   width: 200px;
@@ -128,7 +129,9 @@
   width: 90%;
 }
 .Hair {
-  position: absolute;
+width: 180px;
+right: 0;
+bottom: 0;
 }
 .HairSvg {
   display:flex;
@@ -190,11 +193,9 @@
 
 
   .Skin {
-    position: absolute;
   }
 
   .Hair {
-    position: absolute;
   }
 
   .Favorite {
@@ -290,7 +291,6 @@
     width: 60vw;
   }
   .Skin {
-    position: absolute;
   }
   .Hair img{
     transform: translate(60%, 0%);
@@ -326,7 +326,7 @@
     transform: translate(33%, 15%);
   }
   .contProduct {
-    position: absolute;
+    position: relative;
     background: none;
     top: 0%;
   }
@@ -336,7 +336,6 @@
   
 
   .Skin {
-    position: absolute;
   }
 
   .SkinSvg {
@@ -378,7 +377,7 @@
     transform: translate(50%, 100%);
   }
   .contProduct {
-    position: absolute;
+    position: relative;
     background: none;
     top: 0%;
   }

@@ -52,9 +52,8 @@ export function IWedoArco() {
     return <StaticImage
     src="../images/Home/PNG/WWDArco.png"
         alt="Gaia evolution reception Spa Image"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
-        layout="fullWidth"
         quality='90'
         formats={['auto', 'webp']}
         className="HomeWD2"
@@ -69,7 +68,6 @@ export function IWedoArcoMovil() {
     alt="Gaia evolution reception Spa Image"
         loading="eager"
         placeholder="blurred"
-        layout="fullWidth"
         quality='90'
         formats={['auto', 'webp']}
         className="HomeWDMovil"
@@ -84,7 +82,6 @@ export function IWedoHoja() {
     alt="Gaia evolution Spa products Image"
         loading="eager"
         placeholder="blurred"
-        layout="fullWidth"
         quality='90'
         formats={['auto', 'webp']}
         className="HomeWD1"

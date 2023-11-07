@@ -98,8 +98,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={300}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -119,8 +119,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -141,8 +141,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -163,8 +163,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -185,8 +185,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -207,8 +207,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -229,8 +229,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -251,8 +251,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -273,8 +273,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -295,8 +295,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -317,8 +317,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -340,8 +340,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -363,8 +363,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -386,8 +386,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -409,8 +409,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -432,8 +432,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -455,8 +455,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -478,8 +478,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -501,8 +501,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -524,8 +524,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -547,8 +547,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -570,8 +570,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -593,8 +593,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -616,8 +616,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -639,8 +639,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
@@ -662,8 +662,8 @@ export default function SwiperF() {
                             alt="producto"
                             height={270}
                             loading="lazy"
-                            formats={['auto', 'webp', 'avif']}
-                            quality='100'
+                            formats={['auto', 'webp']}
+                            quality='80'
                         />
                         </motion.div>
                         <TextProduct className="texto" >
