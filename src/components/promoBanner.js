@@ -101,17 +101,15 @@ const PromoBanner = () => {
 
                                     <div className="box__content">
                                         <div className="box__col">
-                                            <div className="promo__web">
-                                                <p className='promoweb'>{node.promoweb}</p>
+                                                <span className='promoweb'>{node.promoweb}</span>
                                                 <p className='textweb'>{node.textweb}</p>
                                                 <p className='contains'>{node.contains}</p>
                                                 <p className='price'>{node.price}</p>
                                                 <p className='value'>{node.value}</p>
                                                 <p className='plus'>{node.plus}</p>
-                                                <a href={node.linkweb} aria-label="Link a Gaia Evolution en Google Maps" rel="noreferrer" target="_blank" className="promo__btn">{node.buttonweb}</a>
-                                            </div>
+                                                <a href={node.linkweb} aria-label="Link a Gaia Evolution en Google Maps" rel="noreferrer" target="_blank" className="box__btn">{node.buttonweb}</a>
                                         </div>
-                                        <div className="box__col">
+                                        <div className="box__col__img">
                                             <img src={node.foto} alt="Promo" height={'100%'} />
                                         </div>
                                     </div>
