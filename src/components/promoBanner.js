@@ -52,8 +52,8 @@ export const usePromoMovilService = () => {
     return {
         promoSheet: data.allGooglePromoSheet.edges,
         promoWebSheet: data.allGooglePromoWebSheet.edges,
-      };
-    }
+    };
+}
 
 const PromoBanner = () => {
     const promo = usePromoMovilService()
@@ -130,8 +130,8 @@ const PromoBanner = () => {
                                 <div className="box box--2">
                                     <svg className="box__background" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         {/* Las rutas y otros elementos SVG aquí */}
-                                        <path id="line1" d="M251.994 21.5L251.995 190.5C251.995 212.591 269.903 230.5 291.995 230.5L517.5 230.5C539.592 230.5 557.5 248.409 557.5 270.5L557.5 275.5C557.5 297.591 575.409 315.5 597.5 315.5L759 315.5" stroke={colors.darkGreen} stroke-width="40" stroke-linecap="round" />
-                                        <path id="line2" d="M20.5001 451L226 451C248.091 451 266 468.909 266 491L266 530C266 552.091 283.908 570 306 570L475.5 570C497.591 570 515.5 587.909 515.5 610L515.5 776.5" stroke={colors.darkGreen} stroke-width="40" stroke-linecap="round" />
+                                        <path id="line1" d="M251.994 21.5L251.995 190.5C251.995 212.591 269.903 230.5 291.995 230.5L517.5 230.5C539.592 230.5 557.5 248.409 557.5 270.5L557.5 275.5C557.5 297.591 575.409 315.5 597.5 315.5L759 315.5" stroke={colors.darkGreen} strokeWidth="40" strokeLinecap="round" />
+                                        <path id="line2" d="M20.5001 451L226 451C248.091 451 266 468.909 266 491L266 530C266 552.091 283.908 570 306 570L475.5 570C497.591 570 515.5 587.909 515.5 610L515.5 776.5" stroke={colors.darkGreen} strokeWidth="40" strokeLinecap="round" />
 
                                         <text fill={colors.softWhite}>
                                             <textPath startOffset="0%" textAnchor="middle" alignmentBaseline="central" xlinkHref="#line1">
@@ -139,21 +139,18 @@ const PromoBanner = () => {
                                                 <animate attributeName="startOffset" from="0%" to="100%" begin="0s" dur="6s" repeatCount="indefinite" />
                                             </textPath>
                                         </text>
-
                                         <text fill={colors.softWhite}>
                                             <textPath startOffset="0%" textAnchor="middle" alignmentBaseline="central" xlinkHref="#line1">
                                                 {node.promotext2}
                                                 <animate attributeName="startOffset" from="0%" to="100%" begin="3s" dur="6s" repeatCount="indefinite" />
                                             </textPath>
                                         </text>
-
                                         <text fill={colors.softWhite}>
                                             <textPath startOffset="0%" textAnchor="middle" alignmentBaseline="central" xlinkHref="#line2">
                                                 {node.promotext3}
                                                 <animate attributeName="startOffset" from="0%" to="100%" begin="0s" dur="6s" repeatCount="indefinite" />
                                             </textPath>
                                         </text>
-
                                         <text fill={colors.softWhite}>
                                             <textPath startOffset="0%" textAnchor="middle" alignmentBaseline="central" xlinkHref="#line2">
                                                 {node.promotext4}
@@ -161,11 +158,14 @@ const PromoBanner = () => {
                                             </textPath>
                                         </text>
                                     </svg>
+
                                     <div className="box__content">
-                                        {node.get} <span>{node.promo}</span> {node.text}
-                                        <p>{node.conditions}</p>
-                                        <p>{node.condition2}</p>
-                                        <a href={node.link} aria-label="Link a Gaia Evolution en Google Maps" rel="noreferrer" target="_blank" className="box__btn">{node.button}</a>
+                                        <p className='get'>{node.get}</p>
+                                        <span>{node.promo}</span>
+                                        <p className='text'>{node.text}</p>
+                                        <p className='conditions'>{node.conditions}</p>
+                                        <p className='conditions'>{node.condition2}</p>
+                                        <a href={node.link} aria-label="Link a Gaia Evolution en Google Maps" rel="noreferrer" target="_blank" className="movil__banner__btn">{node.button}</a>
                                     </div>
                                 </div>
                             }
