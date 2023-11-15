@@ -51,6 +51,19 @@ export const StyledBannerHome = styled.div`
   }
   `}
 `
+ export const Banner = styled(motion.div)` 
+ display: ${props => (props.movil ? "flex" : "none")};
+ width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  ${above.large` 
+  display: ${props => (props.movil ? "none" : "flex")};
+  `}
+`
 
 export const CircleNature = styled.div`
   grid-area: 1 / 1 / 2 / 4;

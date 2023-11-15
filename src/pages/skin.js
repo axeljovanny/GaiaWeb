@@ -7,6 +7,9 @@ import { colors } from "../utils/const";
 import { SkinMobileService, SkinService, useSkinService } from "../components/skin";
 import { ServiceNav } from "../components/servnav";
 import Galery from "../components/galeria";
+import { SEO } from "../components/seo";
+import { Helmet } from "react-helmet";
+import { Trans } from "react-i18next";
 
 
 
@@ -27,6 +30,8 @@ const draw = {
 
 const SkinPage = () => {
   const services = useSkinService()
+  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/skin";
+
 
   const [type, setTitle] = useState(initialTitle);
 
@@ -37,6 +42,9 @@ const SkinPage = () => {
 
   return (
     <StyledServicePage >
+       <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <ServiceNav siteTitle="skin"></ServiceNav>
       <StyledServiceContent>
         <StyledServiceTittle>
@@ -106,3 +114,7 @@ const SkinPage = () => {
 
 
 export default SkinPage
+
+export const Head = () => (
+  <SEO title={"Naturally Beautiful Skin Care"} description={"Gaia Evolution offers naturally derived skin care. Explore certified organic, vegan, and cruelty-free products. Our services enhance your skin's integrity."}/>
+)

@@ -14,6 +14,7 @@ import '../styles/css/home.css'
 import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import { SEO } from "../components/seo";
+import PromoBanner from "../components/promoBanner";
 
 export const query = graphql`
   query ($language: String!) {
@@ -56,6 +57,7 @@ const IndexPage = ({ data }) => {
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
       <Layout>
+        <PromoBanner/>
         <Hero />
         <Wedo />
         <StyledSkin>

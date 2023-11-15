@@ -12,6 +12,8 @@ import { Footer } from "../components"
 import { About, HeroAbout } from "../components/about/about"
 import AboutGallery from "../components/about/gallery"
 import Layout from "../components/layout"
+import { Helmet } from "react-helmet"
+import { SEO } from "../components/seo"
 
 export const query = graphql`
   query ($language: String!) {
@@ -35,6 +37,7 @@ export const query = graphql`
 const AboutPage = ({ data }) => {
 
   const { siteUrl } = data.site.siteMetadata;
+  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/about";
 
   const [isOpen, setIsOpen] = useState(false);
   const itemVariants = {
@@ -49,6 +52,9 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
+       <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <HeroAbout />
       <About/>
       <AboutGallery/>
@@ -89,3 +95,7 @@ const AboutPage = ({ data }) => {
 };
 
 export default AboutPage
+
+export const Head = () => (
+  <SEO title={"Discover Gaia Evolution's Essence"}description={"Explore the heart of Gaia Evolution. Learn about our commitment to well-being, natural products, and our mission to impact your skin, body, and soul."}/>
+)

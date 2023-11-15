@@ -7,6 +7,8 @@ import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 import { Policies } from "../components/policies";
 import { Navbar } from "../components/navbar";
+import { Helmet } from "react-helmet";
+import { SEO } from "../components/seo";
 
 
 
@@ -31,10 +33,15 @@ const PoliciesPage = () => {
         `
   )
   const image = getImage(backgroundImage123)
+  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/policies";
+
 
   return (
     <>
       <BgImage image={image} className="masthead" />
+      <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <Navbar siteTitle="about" />
       <div className="content">
         <Policies></Policies>
@@ -45,3 +52,7 @@ const PoliciesPage = () => {
 
 
 export default PoliciesPage
+
+export const Head = () => (
+  <SEO title={"Gaia Evolution Policies & Guidelines"} description={"Learn about Gaia Evolution's policies for a positive guest experience. Review our guidelines to make the most of your visit."}/>
+)

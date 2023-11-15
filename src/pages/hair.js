@@ -8,6 +8,8 @@ import '../styles/css/skin.css'
 import { HairMobileService, HairService, useHairService } from "../components/hair";
 import { ServiceNav } from "../components/servnav";
 import Galery from "../components/galeria";
+import { SEO } from "../components/seo";
+import { Helmet } from "react-helmet";
 
 
 const initialTitle = 'HAIR CUTS';
@@ -25,6 +27,7 @@ const draw = {
 };
 
 const HairPage = () => {
+  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/hair";
   const hairServices = useHairService()
   // console.log(hairServices);
 
@@ -39,6 +42,9 @@ const HairPage = () => {
 
   return (
     <StyledServicePage siteTitle="hair">
+       <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <ServiceNav siteTitle="hair"></ServiceNav>
       <StyledServiceContent>
         <StyledServiceTittle>
@@ -110,3 +116,7 @@ const HairPage = () => {
 
 
 export default HairPage
+
+export const Head = () => (
+  <SEO title={"Aveda Salon for Customized Hair Care"} description={"Discover Aveda's power at Gaia Evolution. Customized haircuts, color services, and natural, vegan products for incredible results."}/>
+)

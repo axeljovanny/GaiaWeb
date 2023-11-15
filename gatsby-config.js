@@ -4,12 +4,13 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gaia Evolution Spa & Salon | Natural Beauty and Wellness in Illinois`,
-    description: `Discover organic beauty and tranquility at Gaia Evolution Spa & Salon. Rejuvenate your body and mind with our natural services.`,
+    title: `Gaia Evolution | Organic Spa & Salon in Illinois`,
+    description: `Experience organic beauty at Gaia Evolution Spa in Illinois. Our holistic approach rejuvenates your skin, body, and soul. Join us on a journey to well-being!`,
     siteUrl: `https://gaiaevolutionspaandsalon.com/`,
     author: `@ldstudio`,
+    image: `/gatsby-icon.png`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
+  plugins: ["gatsby-plugin-styled-components","gatsby-plugin-sitemap", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
     {
       resolve: 'gatsby-source-filesystem',
       options: {

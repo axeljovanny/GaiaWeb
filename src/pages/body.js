@@ -8,6 +8,8 @@ import '../styles/css/skin.css'
 import { BodyMobileService, BodyService, useBodyService } from "../components/body";
 import { ServiceNav } from "../components/servnav";
 import Galery from "../components/galeria";
+import { Helmet } from "react-helmet";
+import { SEO } from "../components/seo";
 
 
 const initialTitle = 'SPECIAL';
@@ -25,6 +27,7 @@ const draw = {
 };
 
 const BodyPage = () => {
+  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/body";
   const bodyServices = useBodyService()
 
   const [type, setType] = useState(initialTitle);
@@ -38,6 +41,9 @@ const BodyPage = () => {
 
   return (
     <StyledServicePage >
+       <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <ServiceNav siteTitle="body"></ServiceNav>
       <StyledServiceContent>
         <StyledServiceTittle>
@@ -109,3 +115,7 @@ const BodyPage = () => {
 
 
 export default BodyPage
+
+export const Head = () => (
+  <SEO title={"Holistic Wellness for Body & Soul"} description={"Experience holistic solutions for a better life at Gaia Evolution. From reiki to body wraps, our services promote spiritual growth and well-being."}/>
+)
