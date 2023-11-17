@@ -72,12 +72,12 @@ const Hero = ({ children }) => (
                 <ScrollArrow fill={colors.white} className="scroll-movil" />
             </Scroll>
         </StyledHome >
-        <StyledBannerHome>
+        {/* <StyledBannerHome>
             <p><Trans>PROMO_1</Trans></p>
             <p><Trans>PROMO_DISCOUNT</Trans></p>
             <p><Trans>PROMO_2</Trans></p>
             <p><Trans>PROMO_TERMS</Trans></p>
-        </StyledBannerHome>
+        </StyledBannerHome> */}
     </>
 
 )
