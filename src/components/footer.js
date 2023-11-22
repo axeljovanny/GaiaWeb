@@ -39,7 +39,7 @@ const Footer = ({ children }) => (
                         <Link to="/" id="footerabout" aria-label="Gaia Evolution About page link"> About </Link>
                         <a id="footerEmail" aria-label="Footer email" href="mailto:gaiaevolution@icloud.com">Contact Us</a>
                         <Link to="/policies" id="footerpolicies"> Policies </Link>
-                        <a id="footersitemap" aria-label="Gaia Evolution sitemap" href="https://gaiaevolutionspaandsalon.com/sitemap/sitemap-index.xml">Sitemap</a>
+                        <a id="footersitemap" aria-label="Gaia Evolution sitemap" href="https://gaiaevolutionspaandsalon.com/sitemap-index.xml">Sitemap</a>
                     </Liks>
                 </CompanyLiks>
                 <ServiceLiks>

@@ -37,7 +37,7 @@ const PoliciesPage = () => {
 
 
   return (
-    <>
+    <html lang="en">
       <BgImage image={image} className="masthead" />
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
@@ -45,8 +45,8 @@ const PoliciesPage = () => {
       <Navbar siteTitle="about" />
       <div className="content">
         <Policies></Policies>
-        </div>
-    </>
+      </div>
+    </html>
   )
 };
 
@@ -54,5 +54,5 @@ const PoliciesPage = () => {
 export default PoliciesPage
 
 export const Head = () => (
-  <SEO title={"Gaia Evolution Policies & Guidelines"} description={"Learn about Gaia Evolution's policies for a positive guest experience. Review our guidelines to make the most of your visit."}/>
+  <SEO title={"Gaia Evolution Policies & Guidelines"} description={"Learn about Gaia Evolution's policies for a positive guest experience. Review our guidelines to make the most of your visit."} />
 )

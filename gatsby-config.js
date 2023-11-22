@@ -22,7 +22,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://gaiaevolutionspaandsalon.com/',
-        sitemap: 'https://gaiaevolutionspaandsalon.com/sitemap/sitemap-index.xml',
+        sitemap: 'https://gaiaevolutionspaandsalon.com/sitemap-index.xml',
         policy: [{userAgent: '*', allow: '/'}],
       }
     },
