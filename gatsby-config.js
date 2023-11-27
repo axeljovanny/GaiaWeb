@@ -10,7 +10,7 @@ module.exports = {
     author: `@ldstudio`,
     image: `/gatsby-icon.png`,
   },
-  plugins: ["gatsby-plugin-styled-components","gatsby-plugin-sitemap", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
+  plugins: ["gatsby-plugin-styled-components","gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`us`, `mx`],
+        languages: [`us`],
         defaultLanguage: `us`,
         siteUrl: `https://gaiaevolutionspaandsalon.com/`,
         // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
@@ -51,11 +51,6 @@ module.exports = {
           nsSeparator: false
         },
         pages: [
-          {
-            matchPath: '/:lang?/blog/:uid',
-            getLanguageFromPath: true,
-            excludeLanguages: ['mx']
-          },
           {
             matchPath: '/preview',
             languages: ['us']
@@ -88,6 +83,44 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/admin', '/confirmed'],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              edges {
+                node {
+                  path
+                  context {
+                    isCanonical
+                  }
+                }
+              }
+            }
+          }
+        `,
+        serialize: ({ site, allSitePage }) => {
+          return allSitePage.edges
+            .filter(({ node }) => (
+              node.context.isCanonical !== false
+            ))
+            .map(({ node }) => {
+              return {
+                url: site.siteMetadata.siteUrl + node.path,
+                changefreq: 'daily',
+                priority: 0.7,
+              };
+            });
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -100,43 +133,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-sitemap`,
-    //   options: {
-    //     exclude: ['/admin', '/confirmed'],
-    //     query: `
-    //     {
-    //       site {
-    //         siteMetadata {
-    //           siteUrl
-    //         }
-    //       }
-    //       allSitePage {
-    //         edges {
-    //           node {
-    //             path
-    //             context {
-    //               isCanonical
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //   `,
-    //     serialize: ({ site, allSitePage }) => {
-    //       return allSitePage.edges
-    //         .filter(({ node }) => (
-    //           node.context.isCanonical !== false
-    //         ))
-    //         .map(({ node }) => {
-    //           return {
-    //             url: site.siteMetadata.siteUrl + node.path,
-    //             changefreq: 'daily',
-    //             priority: 0.7,
-    //           };
-    //         });
-    //     },
-    //   },
-    // }
+    
   ]
 };
