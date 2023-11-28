@@ -19,7 +19,6 @@ import { Trans } from "react-i18next"
 const Hero = ({ children }) => {
     const handleBookNowClick = () => {
         const phoneNumber = 'tel:773-799-8843';
-      
         if (window.gtag) {
           window.gtag('event', 'conversion', {
             'send_to': 'AW-11407137706/vQyJCIuA5PoYEKq3rL8q',
@@ -77,7 +76,7 @@ const Hero = ({ children }) => {
                 </a>
             </Social>
             <PhoneLogo >
-                <button  className="buttonM" id="phoneNumber" onClick={handleBookNowClick}>
+                <button  className="buttonM" id="phoneNumber">
                     <Phone fill={colors.softWhite} className="phone" onClick={handleBookNowClick} />
                 </button>
                 <button className="buttonW" id="phoneMovil" aria-label="Phone Movil"

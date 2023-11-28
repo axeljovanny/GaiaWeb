@@ -19,7 +19,6 @@ export const StyledHome = styled.div`
   background: ${colors.none};
   overflow-x: hidden;
   ${above.large`  
-  height: 100vh;
   grid-template-rows: 60% 40%; 
   `}
 `
