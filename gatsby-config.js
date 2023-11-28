@@ -2,6 +2,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
+const siteUrl = process.env.URL || `https://gaiaevolutionspaandsalon.com`
+
+
 module.exports = {
   siteMetadata: {
     title: `Gaia Evolution | Organic Spa & Salon in Illinois`,
@@ -86,38 +89,6 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         exclude: ['/admin', '/confirmed'],
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-            allSitePage {
-              edges {
-                node {
-                  path
-                  context {
-                    isCanonical
-                  }
-                }
-              }
-            }
-          }
-        `,
-        serialize: ({ site, allSitePage }) => {
-          return allSitePage.edges
-            .filter(({ node }) => (
-              node.context.isCanonical !== false
-            ))
-            .map(({ node }) => {
-              return {
-                url: site.siteMetadata.siteUrl + node.path,
-                changefreq: 'daily',
-                priority: 0.7,
-              };
-            });
-        },
       },
     },
     {

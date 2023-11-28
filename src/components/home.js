@@ -16,7 +16,28 @@ import "../styles/css/home.css"
 import { IFondoHeader, IWedoArco, IWedoArcoMovil, IWedoHoja } from "./imagesComponets"
 import { Trans } from "react-i18next"
 
-const Hero = ({ children }) => (
+const Hero = ({ children }) => {
+    const handleBookNowClick = () => {
+        const phoneNumber = 'tel:773-799-8843';
+      
+        if (window.gtag) {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-11407137706/vQyJCIuA5PoYEKq3rL8q',
+            'event_callback': () => {
+              window.location.href = phoneNumber;
+              console.log("Si hice el call");
+            },
+          });
+        } else {
+          // Si no se encuentra gtag (por alguna razón), redirige de todos modos
+          window.location.href = phoneNumber;
+          console.log("No lo hice pero ya me voy");
+
+        }
+      };
+
+    return(
+
     <>
         <IFondoHeader />
         <StyledHome>
@@ -55,17 +76,13 @@ const Hero = ({ children }) => (
                     <TiktokIcon fill={colors.darkGreen} className="svgAbout" />
                 </a>
             </Social>
-            <PhoneLogo>
-                <motion.a id="phoneNumber"  aria-label="Phone number"
-                    whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
-                    whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
-                    <Phone fill={colors.softWhite} className="phone" />
-                </motion.a>
-                <motion.a id="phoneMovil" aria-label="Phone Movil"
-                    whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
-                    whileTap={{ scale: 0.9 }} href="tel:773-799-8843">
-                    <p>773-799-8843</p>
-                </motion.a>
+            <PhoneLogo >
+                <button  className="buttonM" id="phoneNumber" onClick={handleBookNowClick}>
+                    <Phone fill={colors.softWhite} className="phone" onClick={handleBookNowClick} />
+                </button>
+                <button className="buttonW" id="phoneMovil" aria-label="Phone Movil"
+                    onClick={handleBookNowClick}>773-799-8843
+                </button>
             </PhoneLogo>
             <Scroll>
                 <ScrollArrow fill={colors.darkGreen} className="scroll" />
@@ -81,6 +98,7 @@ const Hero = ({ children }) => (
     </>
 
 )
+}
 
 const Wedo = ({ children }) => {
 

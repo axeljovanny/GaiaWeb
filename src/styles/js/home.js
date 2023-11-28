@@ -182,23 +182,63 @@ export const PhoneLogo = styled(motion.div)`
   display: flex;
   justify-content: center ;
   align-items: flex-end;
+  position: relative;
+  flex-direction: row;
 
-  a svg{
+  button{
+    background: ${colors.none};
+    top: 40%;
+    left: 0 !important;
+    right: 0 !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 0% !important;
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+  }
+
+  .buttonM svg{
+    display:flex;
     margin-bottom: 4vh;
     width: 50px;
     height: auto;
   }
-
-  a p{display: none;}
+  .buttonM:hover{
+    scale: 1.1;
+    color: ${colors.accentBlue}
+  }
+  .buttonW {display:none}
 
   ${above.large`
   grid-area: 2 / 2 / 3 / 3; 
-  a p{
+  button{
+    background: ${colors.none};
+    top: 80%;
+    left: 0 !important;
+    right: 0 !important;
+    width: 13% !important;
+    height: auto !important;
+    border-radius: 0% !important;
+    margin-left: auto !important; 
+    margin-right: auto !important; 
     display:flex;
-    margin-bottom: 5vh;
-    font-family: ${font.Lregular};
+    justify-content: center;
+    font-family: ${font.Llight};
+
+  }
+
+  
+  .buttonM {display:none}
+  
+  .buttonW{
+    display:flex;
+    margin-bottom: 4vh;
     font-size: ${size.Xtext};
     color: ${colors.softWhite};
+  }
+  .buttonW:hover{
+    scale: 1.1;
+    color: ${colors.accentBlue}
   }
   `}
 `
