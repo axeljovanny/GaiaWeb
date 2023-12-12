@@ -195,7 +195,8 @@
 	align-content: center;
 	align-items: center;
 	justify-content: center;
-  overflow: hidden;
+  	overflow: hidden;
+	scale: 1.06;
 }
  .box__text-line {
 	 position: absolute;
