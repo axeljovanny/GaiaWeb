@@ -7,12 +7,11 @@
 	 --color-white: #F4F2EF;
 	 --color-yellow: yellow;
 	 --color-grey: #e8e8e8;
-	 --color-green: #F19DB5;
 	 --time: 4s;
 	 --time-s: 0.3s;
 	 --vw: 60vw;
    --color-accentBlue: #FDD3E0;
-   --color-green: #F19DB5;
+   --color-green: #e8e8e8;
    --color-darkGreen: #AA5C6D ;
 
 }
@@ -204,7 +203,7 @@
 	 text-align: center;
 	 left: 3vw;
 	 right: 50%;
-   color: var(--color-green);
+   	color: var(--color-green);
 
 }
  .box__text-line--top {
