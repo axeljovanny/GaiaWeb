@@ -7,13 +7,13 @@
 	 --color-white: #F4F2EF;
 	 --color-yellow: yellow;
 	 --color-grey: #e8e8e8;
-	 --color-green: #828C7A;
+	 --color-green: #F19DB5;
 	 --time: 4s;
 	 --time-s: 0.3s;
 	 --vw: 60vw;
-   --color-accentBlue: #6D9886;
-   --color-green: #828C7A;
-   --color-darkGreen: #4b5246;
+   --color-accentBlue: #FDD3E0;
+   --color-green: #F19DB5;
+   --color-darkGreen: #AA5C6D ;
 
 }
 
@@ -58,7 +58,7 @@
   z-index: 13;
   width: 100vw;
   height: 100vh;
-  background: rgba(130, 140, 122, 0.5);
+  background: none;
   backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
@@ -323,7 +323,7 @@
 }
  .box--2 .box__content span {
 	 font-size: 8rem;
-	 color: var(--color-accentBlue);
+	 color: var(--color-darkGreen);
 
 }
  .box--2 .box__content p {
