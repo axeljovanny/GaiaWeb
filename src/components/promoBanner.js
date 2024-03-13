@@ -100,7 +100,24 @@ const PromoBanner = () => {
                                     </div>
 
                                     <div className="box__content">
-                                        <div className="box__col">
+                                        <a href={node.linkweb} aria-label="Link a Gaia Evolution en Google Maps" rel="noreferrer" target="_blank" className="box__col__img__complete" >
+                                            <StaticImage
+                                                className="Banner"
+                                                src="../images/Home/PNG/Valentine banner.png"
+                                                alt="Spa Image"
+                                                placeholder="blurred"
+                                                loading="lazy"
+                                                formats={['auto', 'webp']}
+                                                quality='90'
+                                                style={{
+                                                    width:"100%",
+                                                    position: "absolute",
+                                                }}
+                                            />
+                                        </a>
+
+
+                                        {/*<div className="box__col">
                                                 <span className='promoweb'>{node.promoweb}</span>
                                                 <p className='textweb'>{node.textweb}</p>
                                                 <p className='contains'>{node.contains}</p>
@@ -112,6 +129,7 @@ const PromoBanner = () => {
                                         <div className="box__col__img">
                                             <img src={node.foto} alt="Promo" height={'100%'} />
                                         </div>
+                            */}
                                     </div>
                                 </a>
                             }
@@ -128,8 +146,8 @@ const PromoBanner = () => {
                                 <div className="box box--2">
                                     <svg className="box__background" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         {/* Las rutas y otros elementos SVG aquí */}
-                                        <path id="line1" d="M251.994 21.5L251.995 190.5C251.995 212.591 269.903 230.5 291.995 230.5L517.5 230.5C539.592 230.5 557.5 248.409 557.5 270.5L557.5 275.5C557.5 297.591 575.409 315.5 597.5 315.5L759 315.5" stroke={colors.darkGreen} strokeWidth="40" strokeLinecap="round" />
-                                        <path id="line2" d="M20.5001 451L226 451C248.091 451 266 468.909 266 491L266 530C266 552.091 283.908 570 306 570L475.5 570C497.591 570 515.5 587.909 515.5 610L515.5 776.5" stroke={colors.darkGreen} strokeWidth="40" strokeLinecap="round" />
+                                        <path id="line1" d="M251.994 21.5L251.995 190.5C251.995 212.591 269.903 230.5 291.995 230.5L517.5 230.5C539.592 230.5 557.5 248.409 557.5 270.5L557.5 275.5C557.5 297.591 575.409 315.5 597.5 315.5L759 315.5" stroke="#AA5C6D" strokeWidth="40" strokeLinecap="round" />
+                                        <path id="line2" d="M20.5001 451L226 451C248.091 451 266 468.909 266 491L266 530C266 552.091 283.908 570 306 570L475.5 570C497.591 570 515.5 587.909 515.5 610L515.5 776.5" stroke="#AA5C6D" strokeWidth="40" strokeLinecap="round" />
 
                                         <text fill={colors.softWhite}>
                                             <textPath startOffset="0%" textAnchor="middle" alignmentBaseline="central" xlinkHref="#line1">
