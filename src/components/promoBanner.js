@@ -103,7 +103,7 @@ const PromoBanner = () => {
                                         <a href={node.linkweb} aria-label="Link a Gaia Evolution en Google Maps" rel="noreferrer" target="_blank" className="box__col__img__complete" >
                                             <StaticImage
                                                 className="Banner"
-                                                src="../images/Home/PNG/Valentine banner.png"
+                                                src="../images/Home/PNG/mom banner.png"
                                                 alt="Spa Image"
                                                 placeholder="blurred"
                                                 loading="lazy"
