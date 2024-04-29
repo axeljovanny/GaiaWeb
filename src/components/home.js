@@ -21,7 +21,7 @@ const Hero = ({ children }) => {
         const phoneNumber = 'tel:773-799-8843';
         if (window.gtag) {
           window.gtag('event', 'conversion', {
-            'send_to': 'AW-11407137706/vQyJCIuA5PoYEKq3rL8q',
+            'send_to': 'AW-11407137706/bA_ECIWFqKsZEKq3rL8q',
             'event_callback': () => {
               window.location.href = phoneNumber;
               console.log("Si hice el call");
