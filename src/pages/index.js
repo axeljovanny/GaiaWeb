@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => {
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
       <Layout>
-        <PromoBanner/>
+      {/* <PromoBanner/>*/}
         <Hero />
         <Wedo />
         <StyledSkin>
