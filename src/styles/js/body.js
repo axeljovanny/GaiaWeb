@@ -43,7 +43,45 @@ export const DescBodyTittle = styled.div`
     `}
     `}
       `
+      export const BookNow = styled.div`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      width: 100%;
+      height: 20%;
+      position:relative;
 
+      p{
+        margin:0;
+        font-family: ${font.Rregular};
+        font-size: ${size.Mtittle};
+        color: ${colors.black};
+      }
+      ${above.large`
+      background: ${colors.none};
+      align-items: center;
+      justify-content:center;
+      flex-flow: row wrap;
+      padding : 0;
+      height: 15%;
+      p{
+        text-align: left;
+        font-family: ${font.Rregular};
+        font-size: ${size.Wtittle};
+        color: ${colors.black};
+      }
+
+      ${above.xlarge`
+      p{
+        font-family: ${font.Rmedium};
+        font-size: ${size.XList};
+        color: ${colors.black};
+      }
+  
+    `}
+    `}
+      `
 export const DescDetailsBody = styled.div`
       display: flex;
       justify-content: space-between;

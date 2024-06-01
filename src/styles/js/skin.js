@@ -214,6 +214,64 @@ export const DescPrice = styled.div`
       color: ${colors.softBlack};
       `}
       `
+      export const BookNowDesc = styled.button`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: ${colors.green};
+      border: 0;
+      border-radius: .5rem;
+      box-sizing: border-box;
+      color: #111827;
+      color: ${colors.white};
+      font-family: ${font.Rmedium};
+      font-size: ${size.Mtext};
+      line-height: 1.25rem;
+      padding: 2em 4rem;
+      width: 90%;
+      text-align: center;
+      text-decoration: none #D1D5DB solid;
+      text-decoration-thickness: auto;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+
+
+    :hover {
+      background-color: ${colors.accentBlue};
+    }
+
+    :focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+
+    :focus-visible {
+      box-shadow: none;
+    }
+
+    ${above.large`
+    position:absolute;
+
+    width: 30%;
+    left: 0%;
+    padding: .5rem 2rem;
+    button{
+      padding: .5rem;
+    }
+      `}
+
+      ${above.xlarge`
+      padding: .1rem .1rem;
+      button{
+        padding: .5rem;
+      }
+        `}
+    `
+
 export const DescBook = styled.button`
       left: auto;
       display: flex;

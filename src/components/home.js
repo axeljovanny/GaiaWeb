@@ -15,88 +15,90 @@ import { Circle, Phone, GEWeb, GEMovil, Skin, Hair, Flecha, Body, Favorite, Favo
 import "../styles/css/home.css"
 import { IFondoHeader, IWedoArco, IWedoArcoMovil, IWedoHoja } from "./imagesComponets"
 import { Trans } from "react-i18next"
+import { BookNow, DescBodyTittle } from "../styles/js/body.js";
+import { BookNowDesc, DescBook } from "../styles/js/skin.js";
 
 const Hero = ({ children }) => {
     const handleBookNowClick = () => {
         const phoneNumber = 'tel:773-799-8843';
         if (window.gtag) {
-          window.gtag('event', 'conversion', {
-            'send_to': 'AW-11407137706/bA_ECIWFqKsZEKq3rL8q',
-            'event_callback': () => {
-              window.location.href = phoneNumber;
-              console.log("Si hice el call");
-            },
-          });
+            window.gtag('event', 'conversion', {
+                'send_to': 'AW-11407137706/bA_ECIWFqKsZEKq3rL8q',
+                'event_callback': () => {
+                    window.location.href = phoneNumber;
+                    console.log("Si hice el call");
+                },
+            });
         } else {
-          // Si no se encuentra gtag (por alguna razón), redirige de todos modos
-          window.location.href = phoneNumber;
-          console.log("No lo hice pero ya me voy");
+            // Si no se encuentra gtag (por alguna razón), redirige de todos modos
+            window.location.href = phoneNumber;
+            console.log("No lo hice pero ya me voy");
 
         }
-      };
+    };
 
-    return(
+    return (
 
-    <>
-        <IFondoHeader />
-        <StyledHome>
-            <CircleNature >
-                <motion.div
-                    className="container"
-                    animate={{ rotate: -2160 }}
-                    transition={{ repeat: Infinity, duration: 300, ease: "linear" }}
-                    whileHover={{ rotate: -4320, speed: 200 }}>
-                    <Circle className="circle" fill={colors.green} />
-                </motion.div>
-                <motion.div
-                    className="container"
-                    animate={{ rotate: 2160 }}
-                    transition={{ repeat: Infinity, duration: 300, ease: "linear" }}
-                    whileHover={{ rotate: -4320, speed: 200 }}>
-                    <CircleMovil className="circle-movil" fill={colors.green} />
-                </motion.div>
-            </CircleNature>
-            <LogoPrincipal
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2.1, ease: "easeInOut", type: "spring", delay: 1 }}>
-                <GEWeb className="logo-web" fill={colors.darkGreen} />
-                <GEMovil className="logo-movil" fill={colors.darkGreen} />
-            </LogoPrincipal>
-            <Social initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
-                <a id="facebook" href="https://www.facebook.com/GaiaEvolutionGroup" aria-label="Link al Perfil de Gaia Evolution en Facebook" rel="noreferrer" target="_blank">
-                    <FacebookIcon fill={colors.darkGreen} className="svgAbout" />
-                </a>
-                <a id="instagram" href="https://www.instagram.com/gaiaspaandsalon/" aria-label="Link al Perfil de Gaia Evolution en Instagram" rel="noreferrer" target="_blank">
+        <>
+            <IFondoHeader />
+            <StyledHome>
+                <CircleNature >
+                    <motion.div
+                        className="container"
+                        animate={{ rotate: -2160 }}
+                        transition={{ repeat: Infinity, duration: 300, ease: "linear" }}
+                        whileHover={{ rotate: -4320, speed: 200 }}>
+                        <Circle className="circle" fill={colors.green} />
+                    </motion.div>
+                    <motion.div
+                        className="container"
+                        animate={{ rotate: 2160 }}
+                        transition={{ repeat: Infinity, duration: 300, ease: "linear" }}
+                        whileHover={{ rotate: -4320, speed: 200 }}>
+                        <CircleMovil className="circle-movil" fill={colors.green} />
+                    </motion.div>
+                </CircleNature>
+                <LogoPrincipal
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2.1, ease: "easeInOut", type: "spring", delay: 1 }}>
+                    <GEWeb className="logo-web" fill={colors.darkGreen} />
+                    <GEMovil className="logo-movil" fill={colors.darkGreen} />
+                </LogoPrincipal>
+                <Social initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
+                    <a id="facebook" href="https://www.facebook.com/GaiaEvolutionGroup" aria-label="Link al Perfil de Gaia Evolution en Facebook" rel="noreferrer" target="_blank">
+                        <FacebookIcon fill={colors.darkGreen} className="svgAbout" />
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com/gaiaspaandsalon/" aria-label="Link al Perfil de Gaia Evolution en Instagram" rel="noreferrer" target="_blank">
 
-                    <InstagramIcon fill={colors.darkGreen} className="svgAbout" />
-                </a>
-                <a id="tiktok" href="https://www.tiktok.com/@gaiaevolution" aria-label="Link al Perfil de Gaia Evolution en TikTok" rel="noreferrer" target="_blank">
-                    <TiktokIcon fill={colors.darkGreen} className="svgAbout" />
-                </a>
-            </Social>
-            <PhoneLogo >
-                <button  className="buttonM" id="phoneNumber">
-                    <Phone fill={colors.softWhite} className="phone" onClick={handleBookNowClick} />
-                </button>
-                <button className="buttonW" id="phoneMovil" aria-label="Phone Movil"
-                    onClick={handleBookNowClick}>773-799-8843
-                </button>
-            </PhoneLogo>
-            <Scroll>
-                <ScrollArrow fill={colors.darkGreen} className="scroll" />
-                <ScrollArrow fill={colors.white} className="scroll-movil" />
-            </Scroll>
-        </StyledHome >
-        {/* <StyledBannerHome>
+                        <InstagramIcon fill={colors.darkGreen} className="svgAbout" />
+                    </a>
+                    <a id="tiktok" href="https://www.tiktok.com/@gaiaevolution" aria-label="Link al Perfil de Gaia Evolution en TikTok" rel="noreferrer" target="_blank">
+                        <TiktokIcon fill={colors.darkGreen} className="svgAbout" />
+                    </a>
+                </Social>
+                <PhoneLogo >
+                    <button className="buttonM" id="phoneNumber">
+                        <Phone fill={colors.softWhite} className="phone" onClick={handleBookNowClick} />
+                    </button>
+                    <button className="buttonW" id="phoneMovil" aria-label="Phone Movil"
+                        onClick={handleBookNowClick}>773-799-8843
+                    </button>
+                </PhoneLogo>
+                <Scroll>
+                    <ScrollArrow fill={colors.darkGreen} className="scroll" />
+                    <ScrollArrow fill={colors.white} className="scroll-movil" />
+                </Scroll>
+            </StyledHome >
+            {/* <StyledBannerHome>
             <p><Trans>PROMO_1</Trans></p>
             <p><Trans>PROMO_DISCOUNT</Trans></p>
             <p><Trans>PROMO_2</Trans></p>
             <p><Trans>PROMO_TERMS</Trans></p>
         </StyledBannerHome> */}
-    </>
+        </>
 
-)
+    )
 }
 
 const Wedo = ({ children }) => {
@@ -120,14 +122,18 @@ const Wedo = ({ children }) => {
                     <motion.h1 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TITTLE</Trans></motion.h1>
                     <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_SUBTITTLE</Trans></motion.h2>
                     <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TEXT</Trans></motion.p>
-                    <Link id="wedoabout" to="/" aria-label="See More about Gaia Evolution"><Trans>WEDO_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
+                    <BookNow>
+                        <a href="https://www.vagaro.com/gaiaevolutionspaandsalon1" aria-label="Book Now" rel="noreferrer" target="_blank">
+                            <BookNowDesc><Trans>BOOK_NOW</Trans></BookNowDesc>
+                        </a>
+                    </BookNow>
                 </TextWedo>
                 <ImgsWedo>
                     <ImageWedo initial={{ opacity: 0, y: 10 }} animate={{ y: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} style={{ y: y1 }}>
                         <IWedoArco />
                     </ImageWedo>
                     <ImageWedo initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} style={{ y: y2 }}>
-                        <IWedoHoja/>
+                        <IWedoHoja />
                     </ImageWedo>
                 </ImgsWedo>
             </StyledWedo>
@@ -218,7 +224,7 @@ const Haircare = ({ children }) => {
                 <StaticImage
                     className="Hair"
                     src="../images/Home/PNG/HairCareMovil.png"
-                    alt="Spa Image"      
+                    alt="Spa Image"
                     placeholder="blurred"
                     breakpoints={[750, 1080, 1366, 1920]}
                     loading="eager"
@@ -240,7 +246,7 @@ const Haircare = ({ children }) => {
             </StyledSvg>
             <TextHair>
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
-                <Trans>HAIR_TEXT</Trans>
+                    <Trans>HAIR_TEXT</Trans>
                 </motion.p>
                 <Link id="hair" to="/hair"><Trans>HAIR_LINK</Trans><Flecha className="flecha" stroke={colors.softWhite} /></Link>
             </TextHair>
@@ -328,7 +334,7 @@ const Bodycare = ({ children }) => {
             </ImgSkin>
             <TextSkin>
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
-                <Trans>BODY_TEXT</Trans>
+                    <Trans>BODY_TEXT</Trans>
                 </motion.p>
                 <Link id="body" to="/body"><Trans>BODY_LINK</Trans><Flecha className="flecha" stroke={colors.green} /></Link>
             </TextSkin>
