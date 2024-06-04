@@ -8,6 +8,8 @@ import "../styles/css/skin.css";
 import { Flecha } from "../assets/Home"
 import { colors } from "../utils/const";
 
+const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWtd/bWm+nvyhoBND49wdx2xhIWB/XhqzRqYtSxoi0zarT3+KEvwV47YrbK2D3KHNGVpuMspvK45PtZbDYU2mBMxhpNumeemUMlDvDCSAEKYS5dAJ+8D9xooagacxARxkjErceQCpZZoe0C0C278DWprg9xUCCBCrQKV/J/hK2xKaCr1mRlwWieZwMHCPxKTPoA0EVZMUQwjQI1CjKV+BZoTDcLpQQ/qpnrsIuMROqx5roueVaZkCjT59Iir5MrnaUrYHjHS/bPWdRnHAECweWtg97bgZKFQQ3pmC2V+vSg0DYsEkM613M2cYA/8L/Gx5PyNm8+ENxQ9QGYDZDDpYq7mptzxnoxyd6MzzCcwPawJSA==" 
+
 
 
 
@@ -17,7 +19,7 @@ const SkinServiceDesc = ({ services, type }) => {
          {
             type.type !== "ADD ON SERVICES" && (
             <DescTittle><p>{type.type}</p>
-                <a href="https://squareup.com/appointments/book/18a837f7-27d0-4fb3-9184-eed5ec31a526/9XWS7XZK8MK0T/services" target="_blank" rel="noreferrer">
+                <a href={page} target="_blank" rel="noreferrer">
                     <DescBook>BOOK NOW</DescBook>
                 </a>
             </DescTittle>
@@ -138,7 +140,7 @@ const SkinServiceMobileDesc = ({ services }) => {
                                 
                             })}
                              {data !== "ADD ON SERVICES" && (
-                                <a href="https://squareup.com/appointments/book/18a837f7-27d0-4fb3-9184-eed5ec31a526/9XWS7XZK8MK0T/services" target="_blank" rel="noreferrer">BOOK NOW </a>
+                                <a href={page} target="_blank" rel="noreferrer">BOOK NOW </a>
                             )}
                            
                         </Show>
@@ -155,7 +157,7 @@ const HairServiceDesc = ({ services, type }) => {
     return (
         <>
             <DescHairTittle><p>{type.type}</p>
-                <a href="https://squareup.com/appointments/book/18a837f7-27d0-4fb3-9184-eed5ec31a526/9XWS7XZK8MK0T/services" target="_blank" rel="noreferrer">
+                <a href={page} target="_blank" rel="noreferrer">
                     <DescBook>BOOK NOW</DescBook>
                 </a>
             </DescHairTittle>
@@ -216,7 +218,7 @@ const HairServiceMobileDesc = ({ services }) => {
                                                     <DescPriceHair>
                                                         {node.price}
                                                     </DescPriceHair>
-                                                    <a href="https://squareup.com/appointments/book/18a837f7-27d0-4fb3-9184-eed5ec31a526/9XWS7XZK8MK0T/services" target="_blank" rel="noreferrer">BOOK NOW </a>
+                                                    <a href={page} target="_blank" rel="noreferrer">BOOK NOW </a>
 
                                                 </DescDetailsHair>
 
@@ -239,7 +241,7 @@ const BodyServiceDesc = ({ services, type }) => {
     return (
         <>
             <DescBodyTittle><p>{type.type}</p>
-                <a href="https://squareup.com/appointments/book/18a837f7-27d0-4fb3-9184-eed5ec31a526/9XWS7XZK8MK0T/services" target="_blank" rel="noreferrer">
+                <a href={page} target="_blank" rel="noreferrer">
                     <DescBook>BOOK NOW</DescBook>
                 </a>
             </DescBodyTittle>
@@ -314,7 +316,7 @@ const BodyServiceMobileDesc = ({ services }) => {
                                                     <DescNoteBody>
                                                         {node.note}
                                                     </DescNoteBody>
-                                                    <a href="https://squareup.com/appointments/book/18a837f7-27d0-4fb3-9184-eed5ec31a526/9XWS7XZK8MK0T/services" target="_blank" rel="noreferrer">BOOK NOW </a>
+                                                    <a href={page} target="_blank" rel="noreferrer">BOOK NOW </a>
 
                                                 </DescDetailsBody>
                                             )

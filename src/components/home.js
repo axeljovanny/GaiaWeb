@@ -106,6 +106,8 @@ const Wedo = ({ children }) => {
     const { scrollY } = useViewportScroll();
     const y1 = useTransform(scrollY, [0, 1500], [110, -50]);
     const y2 = useTransform(scrollY, [0, 3100], [0, 30]);
+    const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWtd/bWm+nvyhoBND49wdx2xhIWB/XhqzRqYtSxoi0zarT3+KEvwV47YrbK2D3KHNGVpuMspvK45PtZbDYU2mBMxhpNumeemUMlDvDCSAEKYS5dAJ+8D9xooagacxARxkjErceQCpZZoe0C0C278DWprg9xUCCBCrQKV/J/hK2xKaCr1mRlwWieZwMHCPxKTPoA0EVZMUQwjQI1CjKV+BZoTDcLpQQ/qpnrsIuMROqx5roueVaZkCjT59Iir5MrnaUrYHjHS/bPWdRnHAECweWtg97bgZKFQQ3pmC2V+vSg0DYsEkM613M2cYA/8L/Gx5PyNm8+ENxQ9QGYDZDDpYq7mptzxnoxyd6MzzCcwPawJSA==" 
+
 
     return (
         <StyledWedoSection>
@@ -123,7 +125,7 @@ const Wedo = ({ children }) => {
                     <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_SUBTITTLE</Trans></motion.h2>
                     <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}><Trans>WEDO_TEXT</Trans></motion.p>
                     <BookNow>
-                        <a href="https://www.vagaro.com/gaiaevolutionspaandsalon1" aria-label="Book Now" rel="noreferrer" target="_blank">
+                        <a href={page} aria-label="Book Now" rel="noreferrer" target="_blank">
                             <BookNowDesc><Trans>BOOK_NOW</Trans></BookNowDesc>
                         </a>
                     </BookNow>
