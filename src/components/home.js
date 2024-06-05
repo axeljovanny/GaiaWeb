@@ -5,7 +5,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 // Swiper
 import SwiperF from "./swiper"
 // Style componets
-import { BannerProducts, BannerSvg, CircleNature, Gift, ImageTratamients, ImageWedo, ImgMap, ImgSkin, ImgsWedo, LogoPrincipal, PhoneLogo, Scroll, Social, StyledBannerHome, StyledHome, StyledMaps, StyledProducts, StyledSkin, StyledSvg, StyledTratamient, StyledWedo, StyledWedoSection, TextHair, TextMaps, TextSkin, TextWedo, TransMap } from "../styles/js/home.js"
+import { BannerProducts, BannerSvg, BookHome, BookHomeDesc, BookNowHome, CircleNature, Gift, ImageTratamients, ImageWedo, ImgMap, ImgSkin, ImgsWedo, LogoPrincipal, PhoneLogo, Scroll, Social, StyledBannerHome, StyledHome, StyledMaps, StyledProducts, StyledSkin, StyledSvg, StyledTratamient, StyledWedo, StyledWedoSection, TextHair, TextMaps, TextSkin, TextWedo, TransMap } from "../styles/js/home.js"
 // Constantes
 import { colors } from "../utils/const"
 // SVG
@@ -17,6 +17,9 @@ import { IFondoHeader, IWedoArco, IWedoArcoMovil, IWedoHoja } from "./imagesComp
 import { Trans } from "react-i18next"
 import { BookNow, DescBodyTittle } from "../styles/js/body.js";
 import { BookNowDesc, DescBook } from "../styles/js/skin.js";
+
+const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWtd/bWm+nvyhoBND49wdx2xhIWB/XhqzRqYtSxoi0zarT3+KEvwV47YrbK2D3KHNGVpuMspvK45PtZbDYU2mBMxhpNumeemUMlDvDCSAEKYS5dAJ+8D9xooagacxARxkjErceQCpZZoe0C0C278DWprg9xUCCBCrQKV/J/hK2xKaCr1mRlwWieZwMHCPxKTPoA0EVZMUQwjQI1CjKV+BZoTDcLpQQ/qpnrsIuMROqx5roueVaZkCjT59Iir5MrnaUrYHjHS/bPWdRnHAECweWtg97bgZKFQQ3pmC2V+vSg0DYsEkM613M2cYA/8L/Gx5PyNm8+ENxQ9QGYDZDDpYq7mptzxnoxyd6MzzCcwPawJSA==" 
+
 
 const Hero = ({ children }) => {
     const handleBookNowClick = () => {
@@ -64,6 +67,11 @@ const Hero = ({ children }) => {
                     transition={{ duration: 2.1, ease: "easeInOut", type: "spring", delay: 1 }}>
                     <GEWeb className="logo-web" fill={colors.darkGreen} />
                     <GEMovil className="logo-movil" fill={colors.darkGreen} />
+                    <BookHome>
+                        <a href={page} aria-label="Book Now" rel="noreferrer" target="_blank">
+                            <BookHomeDesc><Trans>BOOK_NOW</Trans></BookHomeDesc>
+                        </a>
+                    </BookHome>
                 </LogoPrincipal>
                 <Social initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>
                     <a id="facebook" href="https://www.facebook.com/GaiaEvolutionGroup" aria-label="Link al Perfil de Gaia Evolution en Facebook" rel="noreferrer" target="_blank">

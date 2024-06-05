@@ -96,6 +96,8 @@ export const LogoPrincipal = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
+
   svg{
     width: 80%;
   }
@@ -106,15 +108,82 @@ export const LogoPrincipal = styled(motion.div)`
   `}
   ${above.large`
   grid-area: 1 / 2 / 2 / 3;
-  align-items: flex-end;
-  padding-bottom: 3em;
+  justify-content: flex-end;
+  align-items: flex-center;
+  flex-flow: column nowrap;
 
   svg{
     width: 60%;
   }
   `}
 `
+export const BookHome = styled.div`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20%;
+      background: ${colors.none};
+      position: relative;
 
+
+      p{
+        margin:0;
+        font-family: ${font.Rregular};
+        font-size: ${size.Mtittle};
+        color: ${colors.black};
+      }
+      ${above.large`
+      align-items: center;
+      justify-content:center;
+      flex-flow: row wrap;
+      padding : 0;
+      height: 15%;
+      p{
+        text-align: left;
+        font-family: ${font.Rregular};
+        font-size: ${size.Wtittle};
+        color: ${colors.black};
+      }
+
+      ${above.xlarge`
+      p{
+        font-family: ${font.Rmedium};
+        font-size: ${size.XList};
+        color: ${colors.black};
+      }
+  
+    `}
+    `}
+    `
+  
+    export const BookHomeDesc = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: ${colors.none};
+    color: ${colors.darkGreen};
+    font-family: ${font.Rmedium};
+    font-size: ${size.Wtext};
+
+    border: 1px solid ${colors.darkGreen};
+    border-radius: .5rem;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+      
+
+  ${above.large`
+  width: 20%;
+
+    `}
+
+    ${above.xlarge`
+   
+      `}
+  `  
 export const Gift = styled(motion.div)`
   position: absolute;
   top: 10%;
