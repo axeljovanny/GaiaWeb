@@ -18,7 +18,7 @@ import { Trans } from "react-i18next"
 import { BookNow, DescBodyTittle } from "../styles/js/body.js";
 import { BookNowDesc, DescBook } from "../styles/js/skin.js";
 
-const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWtd/bWm+nvyhoBND49wdx2xhIWB/XhqzRqYtSxoi0zarT3+KEvwV47YrbK2D3KHNGVpuMspvK45PtZbDYU2mBMxhpNumeemUMlDvDCSAEKYS5dAJ+8D9xooagacxARxkjErceQCpZZoe0C0C278DWprg9xUCCBCrQKV/J/hK2xKaCr1mRlwWieZwMHCPxKTPoA0EVZMUQwjQI1CjKV+BZoTDcLpQQ/qpnrsIuMROqx5roueVaZkCjT59Iir5MrnaUrYHjHS/bPWdRnHAECweWtg97bgZKFQQ3pmC2V+vSg0DYsEkM613M2cYA/8L/Gx5PyNm8+ENxQ9QGYDZDDpYq7mptzxnoxyd6MzzCcwPawJSA==" 
+const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWuU7qUVZpDlttVj4X3nvjUrQpJ842kmQ2sj6FVtC4ywPnMTavZKe0CtqK2V6+ZOGh6ar+y1T6cUW0sUr6AlsKPjvIpsz4DOQraEw4+hXOo8CSxo/qCf3JxBLNitH3ADaW9n9eRdJ8YtgrElOW66SFw9P9eLsuL7E+1KOeKJX+Lib3NXPpFmy5KwXpLBdRYhgcETc/l5MwcYfrSLD8wjp6d/qKuFPUq3Hsy+qki82aHmGvKw8+vzhE57PbaKnx8oyqKSs0eoqyNONe1wN++V+VBjx8PQ6S8WrAVsuOeqtrsWQb3cQuvy6xxzzZRAiBmEns6Aq8tZU9lkrTTrOCmgPz9PL9bZRpuIc5iUMdOOCzNuqg==" 
 
 
 const Hero = ({ children }) => {
@@ -114,7 +114,7 @@ const Wedo = ({ children }) => {
     const { scrollY } = useViewportScroll();
     const y1 = useTransform(scrollY, [0, 1500], [110, -50]);
     const y2 = useTransform(scrollY, [0, 3100], [0, 30]);
-    const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWtd/bWm+nvyhoBND49wdx2xhIWB/XhqzRqYtSxoi0zarT3+KEvwV47YrbK2D3KHNGVpuMspvK45PtZbDYU2mBMxhpNumeemUMlDvDCSAEKYS5dAJ+8D9xooagacxARxkjErceQCpZZoe0C0C278DWprg9xUCCBCrQKV/J/hK2xKaCr1mRlwWieZwMHCPxKTPoA0EVZMUQwjQI1CjKV+BZoTDcLpQQ/qpnrsIuMROqx5roueVaZkCjT59Iir5MrnaUrYHjHS/bPWdRnHAECweWtg97bgZKFQQ3pmC2V+vSg0DYsEkM613M2cYA/8L/Gx5PyNm8+ENxQ9QGYDZDDpYq7mptzxnoxyd6MzzCcwPawJSA==" 
+    const page = "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVBHQHqA73GXD1b+YJxWv5j6VXbIdX6bOdhkYXxYqD4cYIAWnqPa8cyaCQYHMOJ7mJCm52pxFaeKspNkAu/7LHWuU7qUVZpDlttVj4X3nvjUrQpJ842kmQ2sj6FVtC4ywPnMTavZKe0CtqK2V6+ZOGh6ar+y1T6cUW0sUr6AlsKPjvIpsz4DOQraEw4+hXOo8CSxo/qCf3JxBLNitH3ADaW9n9eRdJ8YtgrElOW66SFw9P9eLsuL7E+1KOeKJX+Lib3NXPpFmy5KwXpLBdRYhgcETc/l5MwcYfrSLD8wjp6d/qKuFPUq3Hsy+qki82aHmGvKw8+vzhE57PbaKnx8oyqKSs0eoqyNONe1wN++V+VBjx8PQ6S8WrAVsuOeqtrsWQb3cQuvy6xxzzZRAiBmEns6Aq8tZU9lkrTTrOCmgPz9PL9bZRpuIc5iUMdOOCzNuqg==" 
 
 
     return (
