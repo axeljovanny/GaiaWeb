@@ -49,6 +49,9 @@ const AboutPage = ({ data }) => {
     closed: { opacity: 1, x: "75%", transition: { duration: 0.2 } }
   };
 
+  const giftcardurl ="https://www.vagaro.com/gaiaevolutionspaandsalon1/gift-certificates";
+
+
 
   return (
     <Layout>
