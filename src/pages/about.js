@@ -62,7 +62,7 @@ const AboutPage = ({ data }) => {
       initial={false}
       animate={isOpen ? "open" : "closed"} >
         <AdvImage
-        href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank"
+        href={giftcardurl} rel="noreferrer" target="_blank"
         onHoverStart={() => setIsOpen(!isOpen)}
         onHoverEnd={() => setIsOpen(!isOpen)}
         variants={itemVariants}>
@@ -77,7 +77,7 @@ const AboutPage = ({ data }) => {
           />
         </AdvImage>
         <AdvImage movil
-        href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank">
+        href={giftcardurl} rel="noreferrer" target="_blank">
           <StaticImage 
           src="../images/Home/PNG/TarjetaRecortada.png" 
           alt="GiftMovil" 

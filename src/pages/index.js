@@ -50,6 +50,7 @@ const IndexPage = ({ data }) => {
     closed: { opacity: 1, x: "75%", transition: { duration: 0.2 } }
   };
 
+  const giftcardurl ="https://www.vagaro.com/gaiaevolutionspaandsalon1/gift-certificates";
 
   return (
     <>
@@ -79,7 +80,7 @@ const IndexPage = ({ data }) => {
           initial={false}
           animate={isOpen ? "open" : "closed"} >
           <AdvImage
-            href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank"
+            href={giftcardurl} rel="noreferrer" target="_blank"
             onHoverStart={() => setIsOpen(!isOpen)}
             onHoverEnd={() => setIsOpen(!isOpen)}
             variants={itemVariants}>
@@ -94,7 +95,7 @@ const IndexPage = ({ data }) => {
             />
           </AdvImage>
           <AdvImage movil
-            href="https://squareup.com/gift/FHH5R6M6H54FS/order" rel="noreferrer" target="_blank">
+            href={giftcardurl} rel="noreferrer" target="_blank">
             <StaticImage
               src="../images/Home/PNG/TarjetaRecortada.png"
               alt="GiftMovil"
