@@ -49,7 +49,7 @@ const AboutPage = ({ data }) => {
     closed: { opacity: 1, x: "75%", transition: { duration: 0.2 } }
   };
 
-  const giftcardurl ="https://www.vagaro.com/gaiaevolutionspaandsalon1/gift-certificates";
+  const giftcardurl ="https://book.salonbiz.com/widget/#/booking/purchase-gift-card?comToken=c6615t202407091845p58fJw38866o38Aaju4sA";
 
 
 
