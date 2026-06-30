@@ -8,17 +8,22 @@ const StyledBar = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 32px;
+  min-height: 32px;
   z-index: 15;
   background: ${colors.darkGreen};
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4em;
+  flex-wrap: wrap;
+  gap: 0.2em 0.4em;
+  padding: 4px 8px;
+  box-sizing: border-box;
 
   ${above.large`
-    height: 36px;
+    min-height: 36px;
+    flex-wrap: nowrap;
     gap: 0.6em;
+    padding: 0;
   `}
 `
 
@@ -27,10 +32,13 @@ const BarText = styled.span`
   font-size: ${size.Mmini};
   color: ${colors.white};
   letter-spacing: 0.3px;
+  text-align: center;
+  line-height: 1.3;
 
   ${above.large`
     font-size: ${size.Wmini};
     letter-spacing: 0.5px;
+    text-align: left;
   `}
 `
 
@@ -55,7 +63,7 @@ const BarLink = styled.a`
 
 const AnnouncementBar = () => (
   <StyledBar>
-    <BarText>Proud to be BBB Accredited with an A+ BBB rating.</BarText>
+    <BarText>BBB Accredited · A+ Rating</BarText>
     <BarLink
       href="https://www.bbb.org/us/il/chicago/profile/skin-care/gaia-evolution-spa-salon-0654-1000089528"
       target="_blank"

@@ -15,11 +15,13 @@ export const StyledHome = styled.div`
   grid-template-rows: 20% 60% 20%; 
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding-top: 0%;
+  padding-top: 32px;
   background: ${colors.none};
   overflow-x: hidden;
+  box-sizing: border-box;
   ${above.large`  
-  grid-template-rows: 60% 40%; 
+  grid-template-rows: 60% 40%;
+  padding-top: 0;
   `}
 `
 
@@ -267,7 +269,7 @@ export const PhoneLogo = styled(motion.div)`
 
   .buttonM svg{
     display:flex;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
     width: 50px;
     height: auto;
   }

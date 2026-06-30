@@ -8,7 +8,7 @@ export const StyledNavbar = styled.div`
   background: ${colors.none};
   display: flex;
   position: fixed;
-  top: 0;
+  top: 10%;
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 12;
@@ -156,7 +156,7 @@ export const Overlay = styled(motion.div)`
   height: 10%;
   width: 100vw;
   position: fixed;
-  top: 0;
+  top: 10%;
   z-index: 12;
   background: ${colors.none};
 
