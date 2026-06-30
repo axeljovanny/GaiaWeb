@@ -43,9 +43,7 @@ module.exports = {
       options: {
         spreadsheetId: '1J1mOfNo2aM6GeUlZaw0bJwVnG3bkRGKAi_xFslILvWY',
         worksheetTitle: 'Services',
-        credentials: process.env.GOOGLE_SHEETS_CREDENTIALS
-          ? JSON.parse(process.env.GOOGLE_SHEETS_CREDENTIALS)
-          : require('./secret.json'),
+        credentials: JSON.parse(process.env.GOOGLE_SHEETS_CREDENTIALS),
         filterNode: () => true,
         mapNode: node => node
       }
