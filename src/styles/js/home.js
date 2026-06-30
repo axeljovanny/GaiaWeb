@@ -250,14 +250,13 @@ export const PhoneLogo = styled(motion.div)`
   grid-area: 3 / 2 / 4 / 3;
   background: ${colors.none};
   display: flex;
-  justify-content: center ;
+  justify-content: flex-start;
   align-items: flex-end;
   position: relative;
   flex-direction: row;
 
   button{
     background: ${colors.none};
-    top: 40%;
     left: 0 !important;
     right: 0 !important;
     width: 60px !important;
