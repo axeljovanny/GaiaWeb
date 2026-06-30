@@ -5,3 +5,4 @@ public
 .DS_Store
 package-lock.json
 secret.json
+.env.production
