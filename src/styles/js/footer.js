@@ -8,22 +8,30 @@ export const StyledFooter = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
+  height: auto;
+  padding: 5% 0;
+  box-sizing: border-box;
   background: ${colors.green};
 
   ${above.medium`
 
-  height: 50vh;
+  min-height: 50vh;
+  padding: 4% 0;
 
   `}
   ${above.large`
 
+  min-height: 40vh;
   height: 40vh;
+  padding: 0;
 
   `}
   ${above.xlarge`
 
+  min-height: 40vh;
   height: 40vh;
+  padding: 0;
 
   `}
 `
@@ -124,7 +132,7 @@ background: ${colors.none};
 
 `
 export const Credits = styled.div`
-  margin: 10% 0 0 0;
+  margin: 5% 0 0 0;
   grid-area: 3 / 1 / 4 / 5;
   display:flex;  
   justify-content: center;
@@ -132,6 +140,7 @@ export const Credits = styled.div`
   background: ${colors.none};
   width: 100%;
   ${above.medium`
+  margin: 3% 0 0 0;
   `}
   ${above.large`
   margin: 0;
@@ -239,8 +248,9 @@ export const CreditsNote = styled.div`
 
 export const FooterIcons = styled.div`
 display:flex;
-padding-top: 30%;
-gap: 1vw;
+padding-top: 8%;
+gap: 3vw;
+align-items: center;
 
     
     ${above.large`

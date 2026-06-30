@@ -995,6 +995,7 @@ export const StyledMaps = styled(motion.div)`
   height: 50vh;
   background: ${colors.none};
   position: relative;
+  overflow: hidden;
 
   ${above.medium`
   height: 60vh;
@@ -1004,6 +1005,7 @@ export const StyledMaps = styled(motion.div)`
   ${above.large`
   width: 100vw;
   height: 70vh;
+  overflow: hidden;
 
   
   `}
