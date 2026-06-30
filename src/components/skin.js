@@ -23,7 +23,7 @@ export const useSkinService = () => {
       }
       `
   )
-  return data.allGoogleSkinSheet.edges
+  return data?.allGoogleSkinSheet?.edges || []
 }
 
 const SkinService = (type) => {

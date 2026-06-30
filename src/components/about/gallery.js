@@ -21,7 +21,7 @@ const AboutGallery = () => {
           }
           `
       )
-      return data.allGoogleGaleriaSheet.edges
+      return data?.allGoogleGaleriaSheet?.edges || []
     }
   
     const [currentImage, setCurrentImage] = useState(0);
@@ -38,15 +38,15 @@ const AboutGallery = () => {
     };
   
      const photos = usePhotos().map(({ node }) => {
+      if (!node) return null
       const photo = {};
       photo['id'] = node.id;
       photo['src'] = node.src;
       photo['width'] = node.width;
       photo['height'] = node.height;
       return photo;
-  })
+  }).filter(Boolean)
   
-  console.log(photos);
   
     return (
       < >

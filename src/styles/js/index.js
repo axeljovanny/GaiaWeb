@@ -74,7 +74,31 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: ${colors.softWhite};
+}
+::-webkit-scrollbar-thumb {
+  background: ${colors.green};
+  border-radius: 4px;
+}
+html {
+  scrollbar-color: ${colors.green} ${colors.softWhite};
+  scrollbar-width: thin;
+}
+
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 // @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { 
 //   html { 

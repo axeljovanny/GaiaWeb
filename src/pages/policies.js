@@ -2,13 +2,11 @@ import React from "react"
 
 
 import { graphql, useStaticQuery } from 'gatsby'
-import { getImage } from "gatsby-plugin-image"
-
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Policies } from "../components/policies";
 import { Navbar } from "../components/navbar";
-import { Helmet } from "react-helmet";
 import { SEO } from "../components/seo";
+import { CANONICAL } from "../utils/urls";
 import AnnouncementBar from "../components/AnnouncementBar";
 
 
@@ -34,21 +32,17 @@ const PoliciesPage = () => {
         `
   )
   const image = getImage(backgroundImage123)
-  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/policies";
 
 
   return (
-    <html lang="en">
-      <BgImage image={image} className="masthead" />
-      <Helmet>
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+    <>
+      <GatsbyImage image={image} alt="" className="masthead" style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: -1}} />
       <AnnouncementBar />
       <Navbar siteTitle="about" />
       <div className="content">
         <Policies></Policies>
       </div>
-    </html>
+    </>
   )
 };
 
@@ -56,5 +50,5 @@ const PoliciesPage = () => {
 export default PoliciesPage
 
 export const Head = () => (
-  <SEO title={"Gaia Evolution Policies & Guidelines"} description={"Learn about Gaia Evolution's policies for a positive guest experience. Review our guidelines to make the most of your visit."} />
+  <SEO title={"Gaia Evolution Policies & Guidelines"} description={"Learn about Gaia Evolution's policies for a positive guest experience. Review our guidelines to make the most of your visit."} canonical={CANONICAL.policies} />
 )

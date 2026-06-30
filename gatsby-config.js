@@ -29,38 +29,7 @@ module.exports = {
         policy: [{userAgent: '*', allow: '/'}],
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/locales`,
-        name: `locale`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-react-i18next`,
-      options: {
-        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`us`],
-        defaultLanguage: `us`,
-        siteUrl: `https://gaiaevolutionspaandsalon.com/`,
-        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
-        trailingSlash: 'always',
-        // you can pass any i18next options
-        i18nextOptions: {
-          interpolation: {
-            escapeValue: false // not needed for react as it escapes by default
-          },
-          keySeparator: false,
-          nsSeparator: false
-        },
-        pages: [
-          {
-            matchPath: '/preview',
-            languages: ['us']
-          }
-        ]
-      }
-    },
+
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -74,7 +43,9 @@ module.exports = {
       options: {
         spreadsheetId: '1J1mOfNo2aM6GeUlZaw0bJwVnG3bkRGKAi_xFslILvWY',
         worksheetTitle: 'Services',
-        credentials: require('./secret.json'),
+        credentials: process.env.GOOGLE_SHEETS_CREDENTIALS
+          ? JSON.parse(process.env.GOOGLE_SHEETS_CREDENTIALS)
+          : require('./secret.json'),
         filterNode: () => true,
         mapNode: node => node
       }
@@ -96,8 +67,8 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-Z5TEGPK2P1",
-          "AW-11407137706" // Google Analytics / GA      
+          process.env.GATSBY_GA_TRACKING_ID || "G-Z5TEGPK2P1",
+          process.env.GATSBY_GA_ADS_ID || "AW-11407137706",
         ],
         pluginConfig: {
           // Puts tracking script in the head instead of the body

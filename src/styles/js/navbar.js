@@ -8,7 +8,7 @@ export const StyledNavbar = styled.div`
   background: ${colors.none};
   display: flex;
   position: fixed;
-  top: 10%;
+  top: 40px;
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 12;

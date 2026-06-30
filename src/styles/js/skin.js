@@ -98,8 +98,8 @@ export const TextTittle = styled(motion.div)`
       ${above.xlarge`
       button{
         text-align: left;
-        background: ${colors.none}; 
-        color: ${colors.none}; //usar en SVG
+        background: none;
+        color: inherit;
         font-family: ${font.Lregular};
         font-size: ${size.Wmini};
       }
@@ -244,13 +244,9 @@ export const DescPrice = styled.div`
       background-color: ${colors.accentBlue};
     }
 
-    :focus {
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-    }
-
     :focus-visible {
-      box-shadow: none;
+      outline: 2px solid ${colors.darkGreen};
+      outline-offset: 2px;
     }
 
     ${above.large`
@@ -302,13 +298,9 @@ export const DescBook = styled.button`
       background-color: ${colors.accentBlue};
     }
 
-    :focus {
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-    }
-
     :focus-visible {
-      box-shadow: none;
+      outline: 2px solid ${colors.darkGreen};
+      outline-offset: 2px;
     }
 
     ${above.large`

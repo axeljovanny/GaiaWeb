@@ -13,7 +13,14 @@ const page = "https://book.salonbiz.com/widget/#/welcome?comToken=c6615t20240709
 
 
 
+const EmptyState = () => (
+  <div style={{ padding: "2rem", textAlign: "center", color: "#666" }}>
+    <p>Loading services...</p>
+  </div>
+)
+
 const SkinServiceDesc = ({ services, type }) => {
+    if (!services || services.length === 0) return <EmptyState />
     return (
         <>
          {
@@ -29,7 +36,8 @@ const SkinServiceDesc = ({ services, type }) => {
             <DescTittle add><p>{type.type}</p>
             </DescTittle>
              )}
-            {services.map(({ node }) => {
+            {services?.map(({ node }) => {
+                if (!node) return null
                 return (
                     <div key={node.id}>
                         {
@@ -76,7 +84,7 @@ const SkinServiceDesc = ({ services, type }) => {
 }
 const SkinServiceMobileDesc = ({ services }) => {
 
-    const result = services.map(({ node }) => node.type)
+    const result = (services || []).map(({ node }) => node?.type)
     const sort = result.filter((item,
         index) => result.indexOf(item) === index);
     return (
@@ -94,7 +102,8 @@ const SkinServiceMobileDesc = ({ services }) => {
                         </DescTittle>
                          )}
                         <Show open={toggle}>
-                            {services.map(({ node }) => {
+                            {(services || []).map(({ node }) => {
+                                if (!node) return null
                                 return (
                                     <div key={node.id}>
                                         {
@@ -120,7 +129,7 @@ const SkinServiceMobileDesc = ({ services }) => {
                                                 <DescHairText note >{node.note}</DescHairText>
 
                                             </DescDetailsHair>
-                                               
+                                                
                                             )
                                         }
                                         {
@@ -142,7 +151,7 @@ const SkinServiceMobileDesc = ({ services }) => {
                              {data !== "ADD ON SERVICES" && (
                                 <a href={page} target="_blank" rel="noreferrer">BOOK NOW </a>
                             )}
-                           
+                            
                         </Show>
                     </div>
                 )
@@ -152,7 +161,7 @@ const SkinServiceMobileDesc = ({ services }) => {
 }
 
 const HairServiceDesc = ({ services, type }) => {
-
+    if (!services || services.length === 0) return <EmptyState />
 
     return (
         <>
@@ -161,7 +170,8 @@ const HairServiceDesc = ({ services, type }) => {
                     <DescBook>BOOK NOW</DescBook>
                 </a>
             </DescHairTittle>
-            {services.map(({ node }) => {
+            {(services || []).map(({ node }) => {
+                if (!node) return null
                 return (
                     <div key={node.id}>
                         {
@@ -186,7 +196,7 @@ const HairServiceDesc = ({ services, type }) => {
 }
 const HairServiceMobileDesc = ({ services }) => {
 
-    const result = services.map(({ node }) => node.type)
+    const result = (services || []).map(({ node }) => node?.type)
     const sort = result.filter((item,
         index) => result.indexOf(item) === index);
     return (
@@ -204,7 +214,8 @@ const HairServiceMobileDesc = ({ services }) => {
                                 </DescTittle>
                             )}
                         <Show open={toggle}>
-                            {services.map(({ node }) => {
+                            {(services || []).map(({ node }) => {
+                                if (!node) return null
                                 return (
                                     <div key={node.id}>
                                         {
@@ -236,7 +247,7 @@ const HairServiceMobileDesc = ({ services }) => {
 }
 
 const BodyServiceDesc = ({ services, type }) => {
-
+    if (!services || services.length === 0) return <EmptyState />
 
     return (
         <>
@@ -246,7 +257,8 @@ const BodyServiceDesc = ({ services, type }) => {
                 </a>
             </DescBodyTittle>
 
-            {services.map(({ node }) => {
+            {(services || []).map(({ node }) => {
+                if (!node) return null
                 return (
                     <div key={node.id}>
                         {
@@ -281,7 +293,7 @@ const BodyServiceDesc = ({ services, type }) => {
 }
 const BodyServiceMobileDesc = ({ services }) => {
 
-    const result = services.map(({ node }) => node.type)
+    const result = (services || []).map(({ node }) => node?.type)
     const sort = result.filter((item,
         index) => result.indexOf(item) === index);
     return (
@@ -291,13 +303,14 @@ const BodyServiceMobileDesc = ({ services }) => {
                 const [toggle, toggleNav] = useState(false);
 
                 return (
-                    <>
-                        <DescTittle key={data} open={toggle} onClick={() => toggleNav(!toggle)}>
+                    <React.Fragment key={data}>
+                        <DescTittle open={toggle} onClick={() => toggleNav(!toggle)}>
                             <p>{data}</p>
                             <Flecha className="flecha" stroke={colors.green} />
                         </DescTittle>
                         <Show open={toggle}>
-                            {services.map(({ node }) => {
+                            {(services || []).map(({ node }) => {
+                                if (!node) return null
                                 return (
                                     <div key={node.id}>
                                         {
@@ -325,7 +338,7 @@ const BodyServiceMobileDesc = ({ services }) => {
                                 )
                             })}
                         </Show>
-                    </>
+                    </React.Fragment>
                 )
             })}
         </>

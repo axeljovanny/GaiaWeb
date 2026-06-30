@@ -52,7 +52,7 @@ const Navbar = ({ siteTitle }) => {
                             className="logo"
                             src="../images/logo.png"
                             alt="Gaia Evolution Logo - Home Button"
-                            loading="eager"
+                            loading="lazy"
                             layout="constrained"
                             breakpoints={[750, 1080, 1366, 1920]}
                             formats={['auto', 'webp', 'avif']}
@@ -66,11 +66,6 @@ const Navbar = ({ siteTitle }) => {
                         whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                         whileTap={{ scale: 0.9 }}>
                         <Link id="navPoliciesAbout" to="/policies"> POLICIES </Link>
-                    </ItemNav>
-                    <ItemNav
-                        whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
-                        whileTap={{ scale: 0.9 }}>
-                        <Link id="navAboutUs" to="/"> ABOUT US </Link>
                     </ItemNav>
                     <ItemNav
                         whileHover={{ scale: 1.1, priginX: 0, fill: colors.accentBlue }}
@@ -119,11 +114,6 @@ const Navbar = ({ siteTitle }) => {
                             whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
                             whileTap={{ scale: 0.9 }}>
                             <Link id="navPolicies" to="/policies"> POLICIES </Link>
-                        </ItemNav>
-                        <ItemNav home
-                            whileHover={{ scale: 1.1, priginX: 0, color: colors.accentBlue }}
-                            whileTap={{ scale: 0.9 }}>
-                            <Link id="navAboutUsHome" to="/" aria-label="Gaia Evolution About page link"> ABOUT US </Link>
                         </ItemNav>
                         <ItemNav home
                             whileHover={{ scale: 1.1, priginX: 0, fill: colors.accentBlue }}

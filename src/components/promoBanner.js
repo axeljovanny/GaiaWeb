@@ -50,8 +50,8 @@ export const usePromoMovilService = () => {
 
     )
     return {
-        promoSheet: data.allGooglePromoSheet.edges,
-        promoWebSheet: data.allGooglePromoWebSheet.edges,
+        promoSheet: data?.allGooglePromoSheet?.edges || [],
+        promoWebSheet: data?.allGooglePromoWebSheet?.edges || [],
     };
 }
 
@@ -81,11 +81,11 @@ const PromoBanner = () => {
                 beforeClose: 'ReactModal__Overlay--before-close',
             }}
             closeTimeoutMS={2000}>
-            {/* <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'></link>
-            <a class="gg-close" onRequestClose={() => setModalIsOpen(false)} /> */}
+            <button className="gg-close" onClick={() => setModalIsOpen(false)} aria-label="Close promotion banner" />
 
             <Banner>
-                {promo.promoWebSheet.map(({ node }) => {
+                {(promo.promoWebSheet || []).map(({ node }) => {
+                    if (!node) return null
                     return (
                         <div key={node.id}>
                             {
@@ -139,7 +139,8 @@ const PromoBanner = () => {
 
             </Banner>
             <Banner movil>
-                {promo.promoSheet.map(({ node }) => {
+                {(promo.promoSheet || []).map(({ node }) => {
+                    if (!node) return null
                     return (
                         <div key={node.id}>
                             {

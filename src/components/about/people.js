@@ -24,7 +24,7 @@ export const useReviewsService = () => {
         }
         `
     )
-    return data.allGoogleReviewsSheet.edges
+    return data?.allGoogleReviewsSheet?.edges || []
   }
 
 export default function PeopleSay() {
@@ -57,7 +57,8 @@ export default function PeopleSay() {
                     },
                 }}
             >
-                {services.map(({ node }) => {
+                {(services || []).map(({ node }) => {
+                if (!node) return null
                 return (
                     <SwiperSlide key={node.name}>
                       <CardPeopleSay>

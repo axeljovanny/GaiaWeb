@@ -23,7 +23,7 @@ export const useBodyService = () => {
       }
       `
   )
-  return data.allGoogleBodySheet.edges
+  return data?.allGoogleBodySheet?.edges || []
 }
 
 const BodyService = (type) => {

@@ -1,11 +1,11 @@
 import * as React from "react"
-import Layout from "../components/layout";
-import { Helmet } from "react-helmet";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components";
 import { Link } from "gatsby"
 import AnnouncementBar from "../components/AnnouncementBar";
 import { colors } from "../utils/const";
+import { SEO } from "../components/seo";
+import { CANONICAL } from "../utils/urls";
 
 const pageStyles = {
     display: "flex",
@@ -18,30 +18,24 @@ const pageStyles = {
 }
 
 
-const canonicalUrl = "https://gaiaevolutionspaandsalon.com/404";
-
-
 const NotFoundPage = () => (
     <>
-        <Helmet>
-            <link rel="canonical" href={canonicalUrl} />
-        </Helmet>
-        <Layout>
-            <AnnouncementBar />
+        <AnnouncementBar />
             <Navbar siteTitle="index" />
             <main style={pageStyles}>
-                <h1 >Pagína no encontrada</h1>
-                <p >
-                    Lo sentimos mano 😔, la pagína a la que quieres entrar no existe, pero puedes ir a nuetro Inicio.
+                <h1>Página no encontrada</h1>
+                <p>
+                    Lo sentimos, la página a la que quieres entrar no existe, pero puedes ir a nuestro Inicio.
                 </p>
                 <p><Link to="/" style={{color:colors.accentBlue}}>Visitar Inicio</Link>.</p>
                 
             </main>
             <Footer></Footer>
-        </Layout>
     </>
 );
 
 export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => (
+    <SEO title={"Página no encontrada"} canonical={CANONICAL.notFound} />
+)

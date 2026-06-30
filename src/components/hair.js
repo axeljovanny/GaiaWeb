@@ -21,7 +21,7 @@ export const useHairService = () => {
       }
       `
   )
-  return data.allGoogleHairSheet.edges
+  return data?.allGoogleHairSheet?.edges || []
 }
 
 const HairService = (type) => {

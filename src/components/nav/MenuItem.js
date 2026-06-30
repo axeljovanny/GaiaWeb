@@ -78,11 +78,6 @@ export const MenuItem = ({ toggle }) => {
                     </Link>
                 </Item>
                 <Item>
-                    <Link id="aboutMenu" to="/" aria-label="Gaia Evolution About page link">
-                        ABOUT
-                    </Link>
-                </Item>
-                <Item>
                     <a id="avedaShopMenu" href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=38631"
                         rel="noreferrer"
                         target="_blank"> AVEDA SHOP</a>
@@ -99,7 +94,7 @@ export const MenuItem = ({ toggle }) => {
                         className="logoFooter"
                         src="../../images/logo.png"
                         alt="gaia logo nav"
-                        loading="eager"
+                        loading="lazy"
                         width={120}
                         placeholder="blurred"
                         formats={['auto', 'webp', 'avif']}

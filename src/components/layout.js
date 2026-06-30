@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { GlobalStyles } from '../styles/js/index';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Helmet } from "react-helmet";
 
 
 import '../styles/css/footer.css'
@@ -22,13 +23,16 @@ const Layout = ({ children }) => {
   }
 `);
   return(
-   <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <>
+    <Helmet htmlAttributes={{ lang: 'en' }}>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    </Helmet>
     <GlobalStyles />
     <StyleSheetManager>
         <main>{children}</main>
       </StyleSheetManager>
-    </html>  
+    </>  
     );
 };
 

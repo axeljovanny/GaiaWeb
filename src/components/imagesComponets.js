@@ -11,9 +11,9 @@ export function IFondoHeader() {
         src="../images/Backgrounds/Home.jpg"
         alt="Fondo de header, imagen de una planta"
         layout="fullWidth"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
-        quality='100'
+        quality='85'
         formats={['auto', 'webp']}
         style={{
             position: 'absolute',
@@ -32,9 +32,9 @@ export function IFondoAbout() {
         src="../images/Backgrounds/About.jpg"
         alt="Fondo de header, imagen de una planta"
         layout="fullWidth"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
-        quality='100'
+        quality='85'
         formats={['auto', 'webp']}
         style={{
             position: 'absolute',
@@ -66,7 +66,7 @@ export function IWedoArcoMovil() {
     return <StaticImage
     src="../images/Home/PNG/WWDArcoMovil.png"
     alt="Gaia evolution reception Spa Image"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         quality='90'
         formats={['auto', 'webp']}
@@ -80,7 +80,7 @@ export function IWedoHoja() {
     return <StaticImage
     src="../images/Home/PNG/WWDHoja.png"
     alt="Gaia evolution Spa products Image"
-        loading="eager"
+        loading="lazy"
         placeholder="blurred"
         quality='90'
         formats={['auto', 'webp']}

@@ -26,8 +26,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 1.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -38,8 +38,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 2.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -50,8 +50,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 3.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -62,8 +62,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria4.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -74,8 +74,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 5.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -86,8 +86,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 6.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -98,8 +98,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 7.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}
@@ -110,8 +110,8 @@ export default function Galery() {
         <StaticImage
                     className="imgGallery"
                     src="../images/Fotos/Galeria 8.png"
-                    alt="imagen de prueba"
-                    loading="eager"
+                    alt="Gaia Evolution spa treatment room"
+                    loading="lazy"
                     layout="constrained"
                     breakpoints={[750, 1080, 1366, 1920]}
                     formats={['auto', 'webp', 'avif']}

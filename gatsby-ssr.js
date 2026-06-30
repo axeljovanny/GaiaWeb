@@ -1,10 +1,3 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * Author: LDS(Axel)
- */
-
-// El siguiente bloque es para vizualizar el Layout por defecto en todas las paginas
 const React = require('react')
 const Layout = require('./src/components/layout').default
 const ErrorBoundary = require('./src/components/ErrorBoundary').default
@@ -20,4 +13,3 @@ exports.wrapPageElement = ({ element }) => (
         {element}
     </Layout>
 )
-//Fin del Bloque

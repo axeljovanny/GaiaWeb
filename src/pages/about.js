@@ -1,8 +1,5 @@
 import React, {useState} from "react"
-import { graphql, useStaticQuery } from 'gatsby'
-
-import { getImage, StaticImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { StaticImage } from "gatsby-plugin-image"
 import { AdvImage, Gift } from "../styles/js/home"
 
 import { Navbar } from "../components/navbar"
@@ -11,35 +8,11 @@ import { Footer } from "../components"
 // Constantes
 import { About, HeroAbout } from "../components/about/about"
 import AboutGallery from "../components/about/gallery"
-import Layout from "../components/layout"
-import { Helmet } from "react-helmet"
 import { SEO } from "../components/seo"
+import { CANONICAL } from "../utils/urls"
 import AnnouncementBar from "../components/AnnouncementBar"
 
-export const query = graphql`
-  query ($language: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;
-
-const AboutPage = ({ data }) => {
-
-  const { siteUrl } = data.site.siteMetadata;
-  const canonicalUrl = "https://gaiaevolutionspaandsalon.com/about";
-
+const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const itemVariants = {
     open: {
@@ -55,11 +28,8 @@ const AboutPage = ({ data }) => {
 
 
   return (
-    <Layout>
+    <>
       <AnnouncementBar />
-       <Helmet>
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
       <HeroAbout />
       <About/>
       <AboutGallery/>
@@ -95,12 +65,12 @@ const AboutPage = ({ data }) => {
       </Gift>
        <Navbar siteTitle="about"/>
       <Footer></Footer>
-    </Layout>
+    </>
   )
 };
 
 export default AboutPage
 
 export const Head = () => (
-  <SEO title={"Discover Gaia Evolution's Essence"}description={"Explore the heart of Gaia Evolution. Learn about our commitment to well-being, natural products, and our mission to impact your skin, body, and soul."}/>
+  <SEO title={"Discover Gaia Evolution's Essence"} description={"Explore the heart of Gaia Evolution. Learn about our commitment to well-being, natural products, and our mission to impact your skin, body, and soul."} canonical={CANONICAL.about} />
 )

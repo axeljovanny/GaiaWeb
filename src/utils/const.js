@@ -37,6 +37,9 @@ export const size = {
 
 export const font = {
 
+    light: "RaleLight",
+    medium: "RaleMedium",
+
     Lblack: "LatoBlack",
     Lbold: "LatoBold",
     Lregular: "LatoRegular",

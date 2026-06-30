@@ -96,7 +96,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
                 <StaticImage
                     className="imgSalonMovil"
@@ -107,7 +107,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
             </ImgOne>
             <TextOne>
@@ -115,13 +115,13 @@ const About = ({ children }) => (
             </TextOne>
             <HairText>
                 <ServicesText><motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Cosmetologists (Hair Care Professionals)</motion.h2>
-                    <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel purus lorem. Donec a cursus arcu. Vivamus sed lectus quis metus posuere molestie. Morbi iaculis libero a lacus bibendum, eu pretium metus lacinia. In sit amet magna ac nulla egestas luctus. Praesent et egestas ipsum, sed viverra dolor.</motion.p>
+                    <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Our cosmetologists specialize in precision haircuts, custom color services, and holistic hair treatments using Aveda's naturally-derived products. From keratin treatments to scalp therapies, every service is tailored to enhance your hair's natural beauty and health.</motion.p>
                 </ServicesText>
             </HairText>
             <SkinText>
                 <ServicesText skin>
                     <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Estheticians (Skin Care Professionals)</motion.h2>
-                    <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum velit nibh, ac convallis odio mattis et. Cras eleifend scelerisque erat, id lacinia nibh dignissim id.</motion.p>
+                    <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Our estheticians provide customized facial treatments, advanced peels, microdermabrasion, and holistic skin therapies. Every treatment begins with a thorough skin analysis and is tailored using organic, vegan, and cruelty-free products to restore your skin's natural radiance.</motion.p>
                 </ServicesText></SkinText>
            
 
@@ -145,7 +145,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
             </ImgArc>
             <ImgArc movil initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
@@ -158,7 +158,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
             </ImgArc>
             <TexThree>
@@ -180,7 +180,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
             </ImgArc>
 
@@ -196,7 +196,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
             </ImgVM>
             <TexFive>
@@ -220,7 +220,7 @@ const About = ({ children }) => (
                     alt="Spa Image"
                     loading="lazy"
                     formats={['auto', 'webp', 'avif']}
-                    quality='100'
+                    quality='85'
                 />
             </ImgVM>
         </StyledFour>

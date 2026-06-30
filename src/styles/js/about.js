@@ -32,16 +32,16 @@ export const Gift = styled(motion.div)`
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  gap 5%;
+   gap: 5%;
 
-  ${above.medium`
-  top: 50%;
-  width: 7%;
-  height: 35%;
-  `}
+   ${above.medium`
+   top: 50%;
+   width: 7%;
+   height: 35%;
+   `}
 
-  ${above.large`
-  gap 10%;
+   ${above.large`
+   gap: 10%;
   justify-content: flex-start;
   align-items: flex-end;
   top: 20%;

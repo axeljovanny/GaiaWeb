@@ -1,7 +1,5 @@
 import React, { useState } from "react"
-import { graphql, useStaticQuery } from 'gatsby'
-import { getImage, StaticImage } from "gatsby-plugin-image"
-import { BgImage } from "gbimage-bridge"
+import { StaticImage } from "gatsby-plugin-image"
 // Componentes
 import { Navbar } from "../components/navbar";
 import { Bodycare, Haircare, Hero, Maps, Products, Skincare, Wedo } from "../components/home";
@@ -11,36 +9,11 @@ import { AdvImage, Gift, StyledHair, StyledSkin } from "../styles/js/home";
 // Constantes
 // CSS
 import '../styles/css/home.css'
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout";
 import { SEO } from "../components/seo";
-import PromoBanner from "../components/promoBanner";
+import { CANONICAL } from "../utils/urls";
 import AnnouncementBar from "../components/AnnouncementBar";
 
-export const query = graphql`
-  query ($language: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-  }
-`;
-
-
-const IndexPage = ({ data }) => {
-  const canonicalUrl = "https://gaiaevolutionspaandsalon.com";
-  const { siteUrl } = data.site.siteMetadata;
-
+const IndexPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const itemVariants = {
     open: {
@@ -55,11 +28,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <Helmet>
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
-      <Layout>
-      {/* <PromoBanner/>*/}
         <AnnouncementBar />
         <Hero />
         <Wedo />
@@ -108,7 +76,6 @@ const IndexPage = ({ data }) => {
             />
           </AdvImage>
         </Gift>
-      </Layout>
 
     </>
   )
@@ -116,4 +83,6 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const Head = () => <SEO/> 
+export const Head = () => (
+  <SEO title={"Gaia Evolution Spa & Salon | Organic and Natural Skin, Hair and Body Care"} description={"Welcome to Gaia Evolution Spa & Salon. Discover organic and natural skin, hair and body services and purchase our products."} canonical={CANONICAL.home} />
+) 
