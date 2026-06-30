@@ -22,6 +22,7 @@ export const StyledNavbar = styled.div`
   align-items: center;
   width: 100vw;
   margin: 0;
+  top: 36px;
 
   a{
     margin-left: auto;
@@ -34,11 +35,11 @@ export const StyledNavbar = styled.div`
 export const Mask = styled.div`
 display: none;
 
-${above.large`
+  ${above.large`
 display: flex;
   position: fixed;
   z-index: 11;
-  top: 0;
+  top: 36px;
   width: 100vw;
   height: 13vh;
   backdrop-filter: blur(10px);

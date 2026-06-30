@@ -9,6 +9,7 @@ import { Policies } from "../components/policies";
 import { Navbar } from "../components/navbar";
 import { Helmet } from "react-helmet";
 import { SEO } from "../components/seo";
+import AnnouncementBar from "../components/AnnouncementBar";
 
 
 
@@ -42,6 +43,7 @@ const PoliciesPage = () => {
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
+      <AnnouncementBar />
       <Navbar siteTitle="about" />
       <div className="content">
         <Policies></Policies>

@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components";
 import { Link } from "gatsby"
+import AnnouncementBar from "../components/AnnouncementBar";
 import { colors } from "../utils/const";
 
 const pageStyles = {
@@ -26,6 +27,7 @@ const NotFoundPage = () => (
             <link rel="canonical" href={canonicalUrl} />
         </Helmet>
         <Layout>
+            <AnnouncementBar />
             <Navbar siteTitle="index" />
             <main style={pageStyles}>
                 <h1 >Pagína no encontrada</h1>

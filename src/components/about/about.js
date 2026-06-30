@@ -10,7 +10,7 @@ import { FacebookIcon, InstagramIcon, TiktokIcon } from "../../images/icons"
 import { Phone, GEWeb, GEMovil, ScrollArrow, Circle, CircleMovil } from "../../assets/Home"
 // CSS
 import "../../styles/css/home.css"
-import { HairText, ImgArc, ImgOne, ImgVM, OurServicesText, ReikiText, ServicesText, SkinText, StyledAbout, StyledFirst, StyledFour, StyledPeopleSay, StyledText, StyledThree, StyledTwo, TexFive, TexFive2, TexFour, TexThree, TextOne, TexTwo } from "../../styles/js/about.js"
+import { HairText, ImgArc, ImgOne, ImgVM, OurServicesText, ServicesText, SkinText, StyledAbout, StyledFirst, StyledFour, StyledPeopleSay, StyledText, StyledThree, StyledTwo, TexFive, TexFive2, TexFour, TexThree, TextOne, TexTwo } from "../../styles/js/about.js"
 import { StaticImage } from "gatsby-plugin-image"
 import PeopleSay from "./people.js"
 import { IFondoAbout } from "../imagesComponets.js"
@@ -81,7 +81,7 @@ const About = ({ children }) => (
             <StyledText>
                 <motion.h1 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>We are a group of professional Cosmetologists & Estheticians</motion.h1>
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>That are hard working and staying up to date with the latest trends and technology in the beauty industry to bring our clients the best experience possible. </motion.p>
-                <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Gaia Evolution Spa & Salon was created with the concept of rescue the use of natural & organic sources from our professional lines; Aveda & Eminence are used for our skincare, bodycare & haircare services, complementing them with holistic therapies.</motion.p>
+                <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Gaia Evolution Spa & Salon was created with the concept of rescue the use of natural & organic sources from our professional lines; Aveda are used for our skincare, bodycare & haircare services, complementing them with holistic therapies.</motion.p>
                 <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}> We created a peaceful athmosphere to enjoy during your service because everything we do at Gaia is done with love, dedication and care to all our guests!</motion.p>
             </StyledText>
         </StyledFirst>
@@ -123,11 +123,7 @@ const About = ({ children }) => (
                     <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Estheticians (Skin Care Professionals)</motion.h2>
                     <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum velit nibh, ac convallis odio mattis et. Cras eleifend scelerisque erat, id lacinia nibh dignissim id.</motion.p>
                 </ServicesText></SkinText>
-            <ReikiText>
-                <ServicesText reiki>
-                    <motion.h2 initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Reiki (Healing Energy Therapists)</motion.h2>
-                    <motion.p initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum velit nibh, ac convallis odio mattis et. Cras eleifend scelerisque erat, id lacinia asfrssf nibh dignissim id. </motion.p>
-                </ServicesText></ReikiText>
+           
 
         </StyledTwo>
         <StyledThree>

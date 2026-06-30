@@ -14,6 +14,7 @@ import AboutGallery from "../components/about/gallery"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import { SEO } from "../components/seo"
+import AnnouncementBar from "../components/AnnouncementBar"
 
 export const query = graphql`
   query ($language: String!) {
@@ -55,6 +56,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
+      <AnnouncementBar />
        <Helmet>
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>

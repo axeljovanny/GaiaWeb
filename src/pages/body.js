@@ -10,6 +10,7 @@ import { ServiceNav } from "../components/servnav";
 import Galery from "../components/galeria";
 import { Helmet } from "react-helmet";
 import { SEO } from "../components/seo";
+import AnnouncementBar from "../components/AnnouncementBar";
 
 
 const initialTitle = 'SPECIAL';
@@ -42,6 +43,7 @@ const BodyPage = () => {
   return (
     <html lang="en">
       <StyledServicePage >
+        <AnnouncementBar />
         <Helmet>
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
@@ -106,7 +108,7 @@ const BodyPage = () => {
           </motion.div>
         </StyledServiceMobileContent>
         <StyledServiceNote>
-          <StyledNote><motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.3, delay: .5, ease: "backInOut" }}>Aveda and Eminence work as high quality organic products that are used to pamper your skin, body, and soul with their natural ingredients and holistic properties.</motion.p></StyledNote>
+          <StyledNote><motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.3, delay: .5, ease: "backInOut" }}>Aveda work as high quality organic products that are used to pamper your skin, body, and soul with their natural ingredients and holistic properties.</motion.p></StyledNote>
           <StyledNote><motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1.3, delay: .9, ease: "backInOut" }}> © Gaia Evolution Spa & Salon  {(new Date().getFullYear())} | <a href="https://luckyducky.studio/" rel="noreferrer" target="_blank">Lucky Ducky Studio</a></motion.p></StyledNote></StyledServiceNote>
         {/* <StyledServiceFooter>
       </StyledServiceFooter> */}
@@ -119,5 +121,5 @@ const BodyPage = () => {
 export default BodyPage
 
 export const Head = () => (
-  <SEO title={"Holistic Wellness for Body & Soul"} description={"Experience holistic solutions for a better life at Gaia Evolution. From reiki to body wraps, our services promote spiritual growth and well-being."} />
+  <SEO title={"Holistic Wellness for Body & Soul"} description={"Experience holistic solutions for a better life at Gaia Evolution. Our services promote spiritual growth and well-being."} />
 )

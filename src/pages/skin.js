@@ -9,6 +9,7 @@ import { ServiceNav } from "../components/servnav";
 import Galery from "../components/galeria";
 import { SEO } from "../components/seo";
 import { Helmet } from "react-helmet";
+import AnnouncementBar from "../components/AnnouncementBar";
 import { Trans } from "react-i18next";
 
 
@@ -43,6 +44,7 @@ const SkinPage = () => {
   return (
     <html lang="en">
       <StyledServicePage >
+        <AnnouncementBar />
         <Helmet>
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>

@@ -19,7 +19,7 @@ export const SEO = ({ title, description, pathname, children }) => {
       {children}
       <meta
         name="keywords"
-        content="Gaia Evolution, Spa, Salon, Beauty, Wellness, Organic, Illinois, Natural, Rejuvenation, Relaxation, Health, Haircuts, Styling, Facials, Massages, Manicure, Pedicure, Aveda, Eminence, Holistic, Skincare, Haircare, Body Treatments, Vegan, Cruelty-Free, Organic Products, Tranquility, Spa Experience, Personalized Services, Illinois Spa, Organic Beauty, Holistic Health"
+        content="Gaia Evolution, Spa, Salon, Beauty, Wellness, Organic, Illinois, Natural, Rejuvenation, Relaxation, Health, Haircuts, Styling, Facials, Massages, Manicure, Pedicure, Aveda, Holistic, Skincare, Haircare, Body Treatments, Vegan, Cruelty-Free, Organic Products, Tranquility, Spa Experience, Personalized Services, Illinois Spa, Organic Beauty, Holistic Health"
       />
     </>
   )

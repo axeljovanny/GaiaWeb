@@ -15,6 +15,7 @@ import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import { SEO } from "../components/seo";
 import PromoBanner from "../components/promoBanner";
+import AnnouncementBar from "../components/AnnouncementBar";
 
 export const query = graphql`
   query ($language: String!) {
@@ -59,6 +60,7 @@ const IndexPage = ({ data }) => {
       </Helmet>
       <Layout>
       {/* <PromoBanner/>*/}
+        <AnnouncementBar />
         <Hero />
         <Wedo />
         <StyledSkin>

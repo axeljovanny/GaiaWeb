@@ -10,6 +10,7 @@ import { ServiceNav } from "../components/servnav";
 import Galery from "../components/galeria";
 import { SEO } from "../components/seo";
 import { Helmet } from "react-helmet";
+import AnnouncementBar from "../components/AnnouncementBar";
 
 
 const initialTitle = 'HAIR CUTS';
@@ -44,6 +45,7 @@ const HairPage = () => {
     <html lang="en">
 
       <StyledServicePage siteTitle="hair">
+        <AnnouncementBar />
         <Helmet>
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
